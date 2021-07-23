@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:1-23:12
+	package
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:4:11-47
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:94-121
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:3:70-93
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:5:3-6:51
+	android:largeScreens
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:5:78-105
+	android:smallScreens
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:5:21-48
+	android:normalScreens
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:5:49-77
+	android:xlargeScreens
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:6:21-49
+	android:anyDensity
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:5:106-131
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:7:3-78
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:7:20-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:8:3-77
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:8:20-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:9:3-76
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:9:20-74
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:10:3-71
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:10:20-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:11:3-65
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:11:20-63
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:12:3-83
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:12:20-81
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:13:3-64
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:13:20-62
+application
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:14:3-22:17
+	android:label
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:14:16-48
+	android:hardwareAccelerated
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:14:86-121
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:14:49-85
+activity#com.rmsl.juce.JuceActivity
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:15:5-21:16
+	android:screenOrientation
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:16:15-54
+	android:label
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:15:57-89
+	android:launchMode
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:16:55-86
+	android:hardwareAccelerated
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:16:87-121
+	android:configChanges
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:15:90-151
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:15:15-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:17:7-20:23
+action#android.intent.action.MAIN
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:18:9-60
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:18:17-58
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:19:9-68
+	android:name
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml:19:19-66
+uses-sdk
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\src\main\AndroidManifest.xml

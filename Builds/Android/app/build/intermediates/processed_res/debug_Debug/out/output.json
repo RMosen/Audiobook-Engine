@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.yourcompany.audiobooks",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0.0",
+        "outputFile": "app-debug_-debug.apk",
+        "fullName": "debug_Debug",
+        "baseName": "debug_-debug",
+        "dirName": ""
+      },
+      "path": "resources-debug_Debug.ap_",
+      "properties": {
+        "packageId": "com.yourcompany.audiobooks",
+        "split": "",
+        "minSdkVersion": "16"
+      }
+    }
+  ]
+}
