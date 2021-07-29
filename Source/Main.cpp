@@ -16,7 +16,7 @@ public:
     //==============================================================================
     AudiobooksApplication() {}
 
-    const juce::String getApplicationName() override       { return ProjectInfo::projectName; }
+    const juce::String getApplicationName() override       { return "Audiobook_Engine"; }
     const juce::String getApplicationVersion() override    { return ProjectInfo::versionString; }
     bool moreThanOneInstanceAllowed() override             { return true; }
 
@@ -58,22 +58,14 @@ public:
     class MainWindow    : public juce::DocumentWindow
     {
     public:
-        MainWindow (juce::String name)
-            : DocumentWindow (name,
-                              juce::Desktop::getInstance().getDefaultLookAndFeel()
-                                                          .findColour (juce::ResizableWindow::backgroundColourId),
-                              DocumentWindow::allButtons)
+        MainWindow (juce::String name)  : DocumentWindow (name,
+                                                          juce::Colours::lightgrey,
+                                                          DocumentWindow::allButtons)
         {
             setUsingNativeTitleBar (true);
             setContentOwned (new MainComponent(), true);
 
-           #if JUCE_IOS || JUCE_ANDROID
-            setFullScreen (true);
-           #else
-            setResizable (true, true);
-            centreWithSize (getWidth(), getHeight());
-           #endif
-
+            setFullScreen (true); // set to fullscreen rather than call centreWithSize()
             setVisible (true);
         }
 
