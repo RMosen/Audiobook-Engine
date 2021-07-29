@@ -1,3 +1,69 @@
-ninja: Entering directory `C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\.cxx\cmake\debug_Debug\arm64-v8a'
-[1/2] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/Richard/Documents/GitHub/Audiobooks/Source/MainComponent.cpp.o
-[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug_Debug\obj\arm64-v8a\libjuce_jni.so
+ninja: Entering directory `C:\Users\richa\Documents\GitHub\Audiobook-Engine-Alpha\Builds\Android\app\.cxx\cmake\debug_Debug\arm64-v8a'
+[1/68] Building C object CMakeFiles/cpufeatures.dir/C_/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures/cpu-features.c.o
+[2/68] Linking C static library libcpufeatures.a
+[3/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Source/Main.cpp.o
+[4/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Source/MainComponent.cpp.o
+[5/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_audio_basics.cpp.o
+[6/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_audio_devices.cpp.o
+[7/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_data_structures.cpp.o
+[8/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_audio_utils.cpp.o
+[9/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_audio_formats.cpp.o
+[10/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_core.cpp.o
+[11/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_events.cpp.o
+[12/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o
+[13/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o
+[14/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o
+[15/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_audio_processors.cpp.o
+[16/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o
+[17/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o
+[18/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o
+[19/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o
+[20/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o
+[21/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o
+[22/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o
+[23/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o
+[24/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o
+[25/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_gui_extra.cpp.o
+[26/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o
+[27/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o
+[28/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o
+[29/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o
+[30/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o
+[31/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o
+[32/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o
+[33/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o
+[34/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_graphics.cpp.o
+[35/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o
+[36/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o
+[37/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o
+[38/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o
+[39/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o
+[40/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o
+[41/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o
+[42/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o
+[43/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o
+[44/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o
+[45/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o
+[46/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o
+[47/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o
+[48/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o
+[49/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o
+[50/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o
+[51/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o
+[52/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o
+[53/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o
+[54/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o
+[55/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o
+[56/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o
+[57/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o
+[58/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o
+[59/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o
+[60/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o
+[61/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o
+[62/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
+[63/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o
+[64/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o
+[65/68] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o
+[66/68] Linking CXX static library oboe\liboboe.a
+[67/68] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/JuceLibraryCode/include_juce_gui_basics.cpp.o
+[68/68] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug_Debug\obj\arm64-v8a\libjuce_jni.so

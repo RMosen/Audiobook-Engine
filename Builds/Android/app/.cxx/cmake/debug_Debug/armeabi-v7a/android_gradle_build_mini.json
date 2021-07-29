@@ -1,34 +1,34 @@
 {
   "buildFiles": [
+    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
     "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\CMakeLists.txt",
-    "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\CMakeLists.txt",
-    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake"
+    "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\CMakeLists.txt"
   ],
   "cleanCommands": [
-    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" clean"
+    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "oboe-Debug-armeabi-v7a": {
       "artifactName": "oboe",
-      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" oboe",
+      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" oboe",
       "abi": "armeabi-v7a",
-      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\\oboe\\liboboe.a",
+      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\\oboe\\liboboe.a",
       "runtimeFiles": []
     },
     "cpufeatures-Debug-armeabi-v7a": {
       "artifactName": "cpufeatures",
-      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" cpufeatures",
+      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" cpufeatures",
       "abi": "armeabi-v7a",
-      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\\libcpufeatures.a",
+      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\\libcpufeatures.a",
       "runtimeFiles": []
     },
     "juce_jni-Debug-armeabi-v7a": {
       "artifactName": "juce_jni",
-      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" juce_jni",
+      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\armeabi-v7a\" juce_jni",
       "abi": "armeabi-v7a",
-      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\build\\intermediates\\cmake\\debug_Debug\\obj\\armeabi-v7a\\libjuce_jni.so",
+      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\build\\intermediates\\cmake\\debug_Debug\\obj\\armeabi-v7a\\libjuce_jni.so",
       "runtimeFiles": []
     }
   }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\build\\intermediates\\res\\merged\\debug_\\debug\\values_values.arsc.flat",
+            "outputFile": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\build\\intermediates\\res\\merged\\debug_\\debug\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\src\\debug\\res\\values\\string.xml",
+                    "source": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\src\\debug\\res\\values\\string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "2",

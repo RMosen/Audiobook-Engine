@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm64-v8a" TYPE STATIC_LIBRARY FILES "C:/Users/Richard/Documents/GitHub/Audiobooks/Builds/Android/app/.cxx/cmake/debug_Debug/arm64-v8a/oboe/liboboe.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arm64-v8a" TYPE STATIC_LIBRARY FILES "C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/.cxx/cmake/debug_Debug/arm64-v8a/oboe/liboboe.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
