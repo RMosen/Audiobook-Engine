@@ -1,2 +1,3 @@
 ninja: Entering directory `C:\Users\richa\Documents\GitHub\Audiobook-Engine-Alpha\Builds\Android\app\.cxx\cmake\debug_Debug\x86'
-ninja: no work to do.
+[1/2] Building CXX object CMakeFiles/juce_jni.dir/C_/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Source/MainComponent.cpp.o
+[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug_Debug\obj\x86\libjuce_jni.so

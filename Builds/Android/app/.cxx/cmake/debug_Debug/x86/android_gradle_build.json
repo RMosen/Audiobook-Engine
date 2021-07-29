@@ -1,11 +1,11 @@
 {
   "stringTable": {
     "0": "C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/.cxx/cmake/debug_Debug/x86",
-    "1": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -D_DEBUG=1 -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -O0 -fPIC -Wno-sign-conversion -Wno-gnu-statement-expression",
-    "2": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -fsigned-char -std=c++14",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -D_DEBUG=1 -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -O0 -fPIC -Wno-sign-conversion -Wno-gnu-statement-expression",
+    "2": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -fsigned-char -std=c++14",
     "3": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -IC:/JUCE/modules/juce_audio_devices/native/oboe/src -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -Ofast -std=c++14",
-    "4": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
-    "5": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -std=c++14 -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
+    "4": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
+    "5": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -std=c++14 -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
     "6": "null"
   },
   "buildFiles": [
@@ -3666,6 +3666,51 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCAddress.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCArgument.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCBundle.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCMessage.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCReceiver.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCSender.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTimeTag.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTypes.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_osc\\juce_osc.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_basics.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
@@ -3717,6 +3762,11 @@
         },
         {
           "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_gui_extra.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_osc.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
@@ -6776,6 +6826,42 @@
         },
         {
           "header": "C:\\JUCE\\modules\\juce_gui_extra\\juce_gui_extra.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCAddress.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCArgument.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCBundle.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCMessage.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCReceiver.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCSender.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTimeTag.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\JUCE\\modules\\juce_osc\\juce_osc.h",
           "workingDirectoryOrdinal": 0
         },
         {

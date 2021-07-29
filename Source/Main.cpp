@@ -58,17 +58,24 @@ public:
     class MainWindow    : public juce::DocumentWindow
     {
     public:
-        MainWindow (juce::String name)  : DocumentWindow (name,
-                                                  juce::Colours::lightgrey,
-                                                  DocumentWindow::allButtons)
+        MainWindow (juce::String name)
+            : DocumentWindow (name,
+                              juce::Desktop::getInstance().getDefaultLookAndFeel()
+                                                          .findColour (juce::ResizableWindow::backgroundColourId),
+                              DocumentWindow::allButtons)
         {
             setUsingNativeTitleBar (true);
             setContentOwned (new MainComponent(), true);
- 
-            setFullScreen (true); // set to fullscreen rather than call centreWithSize()
+
+           #if JUCE_IOS || JUCE_ANDROID
+            setFullScreen (true);
+           #else
+            setResizable (true, true);
+            centreWithSize (getWidth(), getHeight());
+           #endif
+
             setVisible (true);
         }
-        
 
         void closeButtonPressed() override
         {
