@@ -1,7 +1,7 @@
-Executable : C:\Users\richa\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+Executable : C:\Users\Richard\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
 arguments : 
 -C
-C:\Users\richa\Documents\GitHub\Audiobook-Engine-Alpha\Builds\Android\app\.cxx\cmake\debug_Debug\x86
+C:\Users\Richard\Documents\GitHub\Audiobooks\Builds\Android\app\.cxx\cmake\debug_Debug\x86
 juce_jni
 jvmArgs : 
 

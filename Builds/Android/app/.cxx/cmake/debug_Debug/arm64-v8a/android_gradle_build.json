@@ -1,28 +1,28 @@
 {
   "stringTable": {
-    "0": "C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/.cxx/cmake/debug_Debug/arm64-v8a",
-    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -D_DEBUG=1 -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -O0 -fPIC -Wno-sign-conversion -Wno-gnu-statement-expression",
-    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -fsigned-char -std=c++14",
-    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -IC:/JUCE/modules/juce_audio_devices/native/oboe/src -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -Ofast -std=c++14",
-    "4": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
-    "5": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -std=c++14 -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/richa/Documents/GitHub/Audiobook-Engine-Alpha/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/richa/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
-    "6": "null"
+    "0": "C:/Users/Richard/Documents/GitHub/Audiobooks/Builds/Android/app/.cxx/cmake/debug_Debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -D_DEBUG=1 -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -O0 -fPIC -Wno-sign-conversion -Wno-gnu-statement-expression",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I../../../../../../../JuceLibraryCode -IC:/JUCE/modules -IC:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -fsigned-char -std=c++14",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -IC:/JUCE/modules/juce_audio_devices/native/oboe/src -IC:/JUCE/modules/juce_audio_devices/native/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -O0 -fno-limit-debug-info -O0 -fPIC -Ofast -std=c++14",
+    "4": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/Richard/Documents/GitHub/Audiobooks/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include",
+    "5": "null",
+    "6": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti  -O0 -fno-limit-debug-info -O0 -fPIC   -fsigned-char -std=c++14 -DDEBUG=1 -DJUCER_ANDROIDSTUDIO_7F0E4A25=1 -DJUCE_ANDROID=1 -DJUCE_ANDROID_API_VERSION=16 -DJUCE_APP_VERSION=1.0.0 -DJUCE_APP_VERSION_HEX=0x10000 -DJUCE_DISPLAY_SPLASH_SCREEN=1 -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_audio_formats=1 -DJUCE_MODULE_AVAILABLE_juce_audio_processors=1 -DJUCE_MODULE_AVAILABLE_juce_audio_utils=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_data_structures=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DJUCE_MODULE_AVAILABLE_juce_graphics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_basics=1 -DJUCE_MODULE_AVAILABLE_juce_gui_extra=1 -DJUCE_MODULE_AVAILABLE_juce_osc=1 -DJUCE_PROJUCER_VERSION=0x60008 -DJUCE_PUSH_NOTIFICATIONS=1 -DJUCE_PUSH_NOTIFICATIONS_ACTIVITY=\"com/rmsl/juce/JuceActivity\" -DJUCE_STANDALONE_APPLICATION=1 -DJUCE_STRICT_REFCOUNTEDPOINTER=1 -DJUCE_USE_DARK_SPLASH_SCREEN=1 -DOBOE_ENABLE_LOGGING=1 -D_DEBUG=1 -Djuce_jni_EXPORTS -I C:/Users/Richard/Documents/GitHub/Audiobooks/Builds/Android/app/../../../JuceLibraryCode -I C:/JUCE/modules -I C:/Users/Richard/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I C:/JUCE/modules/juce_audio_devices/native/oboe/include"
   },
   "buildFiles": [
-    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
     "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\CMakeLists.txt",
-    "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\CMakeLists.txt"
+    "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\CMakeLists.txt",
+    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" clean"
+    "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "juce_jni-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" juce_jni",
+      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" juce_jni",
       "buildType": "debug",
-      "toolchain": "1020535292",
+      "toolchain": "3877520856",
       "abi": "arm64-v8a",
       "artifactName": "juce_jni",
       "files": [
@@ -587,238 +587,318 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Source\\Main.cpp",
+          "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\CMakeLists.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\readme.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\flac\\Flac Licence.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\README.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\oggvorbis\\Ogg Vorbis Licence.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\LICENSE.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\README.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\LICENSE.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\README.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\LICENSE.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\README.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\LICENSE.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\README.md",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_core\\native\\java\\README.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\jpglib\\changes to libjpeg for JUCE.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\pnglib\\libpng_readme.txt",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Source\\Main.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Source\\MainComponent.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Source\\MainComponent.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\buffers\\juce_AudioChannelSet.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\buffers\\juce_AudioDataConverters.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\buffers\\juce_AudioProcessLoadMeasurer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\buffers\\juce_FloatVectorOperations.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiBuffer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiFile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiKeyboardState.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiMessage.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiMessageSequence.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\midi\\juce_MidiRPN.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPEInstrument.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPEMessages.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPENote.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPESynthesiser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPESynthesiserBase.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPESynthesiserVoice.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPEUtils.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPEValue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\mpe\\juce_MPEZoneLayout.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_BufferingAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_ChannelRemappingAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_IIRFilterAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_MemoryAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_MixerAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_ResamplingAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_ReverbAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\sources\\juce_ToneGeneratorAudioSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\synthesisers\\juce_Synthesiser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\utilities\\juce_IIRFilter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\utilities\\juce_Interpolators.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\utilities\\juce_LagrangeInterpolator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\utilities\\juce_SmoothedValue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\utilities\\juce_WindowedSincInterpolator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\juce_audio_basics.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_basics\\juce_audio_basics.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\audio_io\\juce_AudioDeviceManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\audio_io\\juce_AudioIODevice.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\audio_io\\juce_AudioIODeviceType.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\ump\\juce_UMPMidi1ToMidi2DefaultTranslator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\ump\\juce_UMPSysEx7.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\ump\\juce_UMPTests.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\ump\\juce_UMPUtils.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\ump\\juce_UMPView.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\juce_MidiDevices.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\midi_io\\juce_MidiMessageCollector.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
@@ -1078,2498 +1158,2418 @@
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_android_Audio.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_android_Midi.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_android_Oboe.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_android_OpenSL.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_ios_Audio.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_linux_ALSA.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_linux_Bela.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_linux_JackAudio.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_linux_Midi.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_mac_CoreAudio.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_mac_CoreMidi.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_win32_ASIO.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_win32_DirectSound.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_win32_Midi.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\juce_win32_WASAPI.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\sources\\juce_AudioSourcePlayer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\sources\\juce_AudioTransportSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\juce_audio_devices.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_devices\\juce_audio_devices.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_AiffAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_CoreAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_FlacAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_LAMEEncoderAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_MP3AudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_OggVorbisAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_WavAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\juce_WindowsMediaAudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioFormatManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioFormatReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioFormatReaderSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioFormatWriter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_AudioSubsectionReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\format\\juce_BufferingAudioFormatReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\sampler\\juce_Sampler.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\juce_audio_formats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_formats\\juce_audio_formats.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format\\juce_AudioPluginFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format\\juce_AudioPluginFormatManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\baseiids.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\fbuffer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\fdebug.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\fobject.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\fstreamer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\fstring.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\source\\updatehandler.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\thread\\source\\flock.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\base\\conststringtable.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\base\\coreiids.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\base\\funknown.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\base\\ustring.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\common\\memorystream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\common\\pluginview.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\hosting\\hostclasses.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\hosting\\pluginterfacesupport.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstbus.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstcomponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstcomponentbase.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vsteditcontroller.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstinitiids.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstparameters.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\source\\vst\\vstpresetfile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\juce_AudioUnitPluginFormat.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\juce_LADSPAPluginFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\juce_LegacyAudioParameter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\juce_VST3PluginFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\juce_VSTPluginFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_AudioPluginInstance.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_AudioProcessor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_AudioProcessorEditor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_AudioProcessorGraph.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_AudioProcessorParameterGroup.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_GenericAudioProcessorEditor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\processors\\juce_PluginDescription.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\scanning\\juce_KnownPluginList.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\scanning\\juce_PluginDirectoryScanner.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\scanning\\juce_PluginListComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioParameterBool.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioParameterChoice.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioParameterFloat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioParameterInt.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioProcessorParameterWithID.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_AudioProcessorValueTreeState.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_ParameterAttachments.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_PluginHostType.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\utilities\\juce_RangedAudioParameter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\juce_audio_processors.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_processors\\juce_audio_processors.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\audio_cd\\juce_AudioCDReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_AudioAppComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_AudioDeviceSelectorComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_AudioThumbnail.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_AudioThumbnailCache.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_AudioVisualiserComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\gui\\juce_MidiKeyboardComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_android_BluetoothMidiDevicePairingDialogue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_ios_BluetoothMidiDevicePairingDialogue.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_linux_AudioCDReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_linux_BluetoothMidiDevicePairingDialogue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_mac_AudioCDBurner.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_mac_AudioCDReader.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_mac_BluetoothMidiDevicePairingDialogue.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_win_BluetoothMidiDevicePairingDialogue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_win32_AudioCDBurner.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\native\\juce_win32_AudioCDReader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\players\\juce_AudioProcessorPlayer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\players\\juce_SoundPlayer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\juce_audio_utils.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_audio_utils\\juce_audio_utils.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_AbstractFifo.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_ArrayBase.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_DynamicObject.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_HashMap_test.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_NamedValueSet.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_OwnedArray.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_PropertySet.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_ReferenceCountedArray.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_SparseSet.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\containers\\juce_Variant.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_DirectoryIterator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_File.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_FileFilter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_FileInputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_FileOutputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_FileSearchPath.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_RangedDirectoryIterator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_TemporaryFile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\files\\juce_WildcardFileFilter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\javascript\\juce_Javascript.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\javascript\\juce_JSON.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\logging\\juce_FileLogger.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\logging\\juce_Logger.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\maths\\juce_BigInteger.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\maths\\juce_Expression.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\maths\\juce_Random.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\memory\\juce_AllocationHooks.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\memory\\juce_MemoryBlock.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\misc\\juce_ConsoleApplication.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\misc\\juce_Result.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\misc\\juce_RuntimePermissions.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\misc\\juce_Uuid.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_Files.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_JNIHelpers.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_Misc.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_Network.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_RuntimePermissions.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_SystemStats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_android_Threads.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_curl_Network.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_linux_CommonFile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_linux_Files.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_linux_Network.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_linux_SystemStats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_linux_Threads.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_mac_Files.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_mac_Network.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_mac_Strings.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_mac_SystemStats.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_mac_Threads.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_posix_NamedPipe.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_wasm_SystemStats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_win32_Files.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_win32_Network.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_win32_Registry.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_win32_SystemStats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\native\\juce_win32_Threads.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_IPAddress.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_MACAddress.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_NamedPipe.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_Socket.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_URL.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\network\\juce_WebInputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_BufferedInputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_FileInputSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_InputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_MemoryInputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_MemoryOutputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_OutputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_SubregionStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\streams\\juce_URLInputSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\system\\juce_SystemStats.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_Base64.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_CharacterFunctions.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_Identifier.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_LocalisedStrings.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_String.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_StringArray.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_StringPairArray.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_StringPool.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\text\\juce_TextDiff.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_ChildProcess.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_HighResolutionTimer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_ReadWriteLock.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_Thread.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_ThreadPool.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_TimeSliceThread.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\threads\\juce_WaitableEvent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\time\\juce_PerformanceCounter.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\time\\juce_RelativeTime.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\time\\juce_Time.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\unit_tests\\juce_UnitTest.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\xml\\juce_XmlDocument.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\xml\\juce_XmlElement.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\zip\\juce_GZIPCompressorOutputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\zip\\juce_GZIPDecompressorInputStream.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\zip\\juce_ZipFile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\juce_core.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_core\\juce_core.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\app_properties\\juce_ApplicationProperties.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\app_properties\\juce_PropertiesFile.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\undomanager\\juce_UndoManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\values\\juce_CachedValue.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\values\\juce_Value.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\values\\juce_ValueTree.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\values\\juce_ValueTreeSynchroniser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\values\\juce_ValueWithDefault.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\juce_data_structures.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_data_structures\\juce_data_structures.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\broadcasters\\juce_ActionBroadcaster.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\broadcasters\\juce_AsyncUpdater.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\broadcasters\\juce_ChangeBroadcaster.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\interprocess\\juce_ConnectedChildProcess.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\interprocess\\juce_InterprocessConnection.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\interprocess\\juce_InterprocessConnectionServer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\interprocess\\juce_NetworkServiceDiscovery.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\messages\\juce_ApplicationBase.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\messages\\juce_DeletedAtShutdown.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\messages\\juce_MessageListener.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\messages\\juce_MessageManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_android_Messaging.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_ios_MessageManager.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_linux_Messaging.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_mac_MessageManager.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_win32_Messaging.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\native\\juce_win32_WinRTWrapper.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\timers\\juce_MultiTimer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\timers\\juce_Timer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\juce_events.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_events\\juce_events.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\colour\\juce_Colour.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\colour\\juce_ColourGradient.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\colour\\juce_Colours.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\colour\\juce_FillType.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\contexts\\juce_GraphicsContext.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\contexts\\juce_LowLevelGraphicsPostScriptRenderer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\contexts\\juce_LowLevelGraphicsSoftwareRenderer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\effects\\juce_DropShadowEffect.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\effects\\juce_GlowEffect.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_AttributedString.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_CustomTypeface.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_Font.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_GlyphArrangement.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_TextLayout.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\fonts\\juce_Typeface.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\geometry\\juce_AffineTransform.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\geometry\\juce_EdgeTable.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\geometry\\juce_Path.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\geometry\\juce_PathIterator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\geometry\\juce_PathStrokeType.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\juce_GIFLoader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\juce_JPEGLoader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\juce_PNGLoader.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\images\\juce_Image.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\images\\juce_ImageCache.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\images\\juce_ImageConvolutionKernel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\images\\juce_ImageFileFormat.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_android_Fonts.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_android_GraphicsContext.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_android_IconHelpers.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_freetype_Fonts.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_linux_Fonts.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_linux_IconHelpers.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_mac_CoreGraphicsContext.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_mac_Fonts.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_mac_IconHelpers.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_win32_Direct2DGraphicsContext.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_win32_DirectWriteTypeface.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_win32_DirectWriteTypeLayout.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_win32_Fonts.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\native\\juce_win32_IconHelpers.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\placement\\juce_RectanglePlacement.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\juce_graphics.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_graphics\\juce_graphics.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\application\\juce_Application.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_ArrowButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_Button.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_DrawableButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_HyperlinkButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_ImageButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_ShapeButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_TextButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_ToggleButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\buttons\\juce_ToolbarButton.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\commands\\juce_ApplicationCommandInfo.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\commands\\juce_ApplicationCommandManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\commands\\juce_ApplicationCommandTarget.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\commands\\juce_KeyPressMappingSet.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\components\\juce_Component.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\components\\juce_ComponentListener.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\components\\juce_ModalComponentManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\desktop\\juce_Desktop.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\desktop\\juce_Displays.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_Drawable.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawableComposite.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawableImage.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawablePath.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawableRectangle.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawableShape.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_DrawableText.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\drawables\\juce_SVGParser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_ContentSharer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_DirectoryContentsDisplayComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_DirectoryContentsList.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileBrowserComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileChooser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileChooserDialogBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileListComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FilenameComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileSearchPathListComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_FileTreeComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\filebrowser\\juce_ImagePreviewComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\keyboard\\juce_CaretComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\keyboard\\juce_KeyboardFocusTraverser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\keyboard\\juce_KeyListener.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\keyboard\\juce_KeyPress.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\keyboard\\juce_ModifierKeys.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ComponentAnimator.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ComponentBoundsConstrainer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ComponentBuilder.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ComponentMovementWatcher.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ConcertinaPanel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_FlexBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_Grid.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_GridItem.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_GroupComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_MultiDocumentPanel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ResizableBorderComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ResizableCornerComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ResizableEdgeComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_ScrollBar.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_SidePanel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_StretchableLayoutManager.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_StretchableLayoutResizerBar.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_StretchableObjectResizer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_TabbedButtonBar.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_TabbedComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\layout\\juce_Viewport.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\lookandfeel\\juce_LookAndFeel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\lookandfeel\\juce_LookAndFeel_V1.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\lookandfeel\\juce_LookAndFeel_V2.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\lookandfeel\\juce_LookAndFeel_V3.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\lookandfeel\\juce_LookAndFeel_V4.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\menus\\juce_BurgerMenuComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\menus\\juce_MenuBarComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\menus\\juce_MenuBarModel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\menus\\juce_PopupMenu.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\misc\\juce_BubbleComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\misc\\juce_DropShadower.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\misc\\juce_JUCESplashScreen.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_ComponentDragger.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_DragAndDropContainer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_MouseCursor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_MouseEvent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_MouseInactivityDetector.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_MouseInputSource.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\mouse\\juce_MouseListener.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\x11\\juce_linux_X11_DragAndDrop.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\x11\\juce_linux_X11_Symbols.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\x11\\juce_linux_XWindowSystem.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_android_ContentSharer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_android_FileChooser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_android_Windowing.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_common_MimeTypes.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_ios_ContentSharer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_ios_FileChooser.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_ios_UIViewComponentPeer.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_ios_Windowing.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_linux_FileChooser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_linux_Windowing.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_mac_FileChooser.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_mac_MainMenu.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_mac_MouseCursor.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_mac_NSViewComponentPeer.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_mac_Windowing.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_win32_DragAndDrop.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_win32_FileChooser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\native\\juce_win32_Windowing.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_MarkerList.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativeCoordinate.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativeCoordinatePositioner.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativeParallelogram.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativePoint.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativePointPath.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\positioning\\juce_RelativeRectangle.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_BooleanPropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_ButtonPropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_ChoicePropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_MultiChoicePropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_PropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_PropertyPanel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_SliderPropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\properties\\juce_TextPropertyComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ComboBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ImageComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_Label.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ListBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ProgressBar.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_Slider.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_TableHeaderComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_TableListBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_TextEditor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_Toolbar.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ToolbarItemComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_ToolbarItemPalette.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\widgets\\juce_TreeView.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_AlertWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_CallOutBox.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_ComponentPeer.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_DialogWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_DocumentWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_ResizableWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_ThreadWithProgressWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_TooltipWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\windows\\juce_TopLevelWindow.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\juce_gui_basics.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_basics\\juce_gui_basics.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\code_editor\\juce_CodeDocument.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\code_editor\\juce_CodeEditorComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\code_editor\\juce_CPlusPlusCodeTokeniser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\code_editor\\juce_LuaCodeTokeniser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\code_editor\\juce_XMLCodeTokeniser.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\documents\\juce_FileBasedDocument.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_AnimatedAppComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_BubbleMessageComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_ColourSelector.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_KeyMappingEditorComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_LiveConstantEditor.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_PreferencesPanel.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_PushNotifications.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_RecentlyOpenedFilesList.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_SplashScreen.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\misc\\juce_SystemTrayIconComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_android_PushNotifications.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_android_WebBrowserComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_AndroidViewComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_ios_PushNotifications.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_ios_UIViewComponent.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_linux_X11_SystemTrayIcon.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_linux_X11_WebBrowserComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_linux_XEmbedComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_mac_AppleRemote.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_mac_NSViewComponent.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_mac_PushNotifications.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_mac_SystemTrayIcon.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_mac_WebBrowserComponent.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_win32_ActiveXComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_win32_HWNDComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_win32_SystemTrayIcon.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\native\\juce_win32_WebBrowserComponent.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\juce_gui_extra.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_gui_extra\\juce_gui_extra.mm",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCAddress.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCArgument.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCBundle.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCMessage.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCReceiver.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCSender.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTimeTag.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\osc\\juce_OSCTypes.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
           "src": "C:\\JUCE\\modules\\juce_osc\\juce_osc.cpp",
-          "flagsOrdinal": 5,
+          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_basics.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_audio_basics.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_devices.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_audio_devices.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_formats.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_audio_formats.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_processors.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_audio_processors.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_audio_utils.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_audio_utils.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_core.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_core.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_data_structures.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_data_structures.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_events.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_events.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_graphics.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_graphics.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_gui_basics.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_gui_basics.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_gui_extra.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_gui_extra.cpp",
           "flagsOrdinal": 2,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\include_juce_osc.cpp",
+          "src": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\include_juce_osc.cpp",
           "flagsOrdinal": 2,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\CMakeLists.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_devices\\native\\oboe\\readme.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\flac\\Flac Licence.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\oggvorbis\\libvorbis-1.3.7\\README.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_formats\\codecs\\oggvorbis\\Ogg Vorbis Licence.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\LICENSE.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\base\\README.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\LICENSE.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\pluginterfaces\\README.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\LICENSE.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\public.sdk\\README.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\LICENSE.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_audio_processors\\format_types\\VST3_SDK\\README.md",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_core\\native\\java\\README.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\jpglib\\changes to libjpeg for JUCE.txt",
-          "flagsOrdinal": 6,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\JUCE\\modules\\juce_graphics\\image_formats\\pnglib\\libpng_readme.txt",
-          "flagsOrdinal": 6,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [
         {
-          "header": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Source\\MainComponent.h",
+          "header": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Source\\MainComponent.h",
           "workingDirectoryOrdinal": 0
         },
         {
@@ -6581,34 +6581,34 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "header": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\JuceLibraryCode\\JuceHeader.h",
+          "header": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\JuceLibraryCode\\JuceHeader.h",
           "workingDirectoryOrdinal": 0
         }
       ],
-      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\build\\intermediates\\cmake\\debug_Debug\\obj\\arm64-v8a\\libjuce_jni.so",
+      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\build\\intermediates\\cmake\\debug_Debug\\obj\\arm64-v8a\\libjuce_jni.so",
       "runtimeFiles": []
     },
     "cpufeatures-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" cpufeatures",
+      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" cpufeatures",
       "buildType": "debug",
-      "toolchain": "1020535292",
+      "toolchain": "3877520856",
       "abi": "arm64-v8a",
       "artifactName": "cpufeatures",
       "files": [
         {
-          "src": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures\\cpu-features.c",
+          "src": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures\\cpu-features.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\\libcpufeatures.a",
+      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\\libcpufeatures.a",
       "runtimeFiles": []
     },
     "oboe-Debug-arm64-v8a": {
-      "buildCommand": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" oboe",
+      "buildCommand": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\" oboe",
       "buildType": "debug",
-      "toolchain": "1020535292",
+      "toolchain": "3877520856",
       "abi": "arm64-v8a",
       "artifactName": "oboe",
       "files": [
@@ -6869,14 +6869,14 @@
         }
       ],
       "headers": [],
-      "output": "C:\\Users\\richa\\Documents\\GitHub\\Audiobook-Engine-Alpha\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\\oboe\\liboboe.a",
+      "output": "C:\\Users\\Richard\\Documents\\GitHub\\Audiobooks\\Builds\\Android\\app\\.cxx\\cmake\\debug_Debug\\arm64-v8a\\oboe\\liboboe.a",
       "runtimeFiles": []
     }
   },
   "toolchains": {
-    "1020535292": {
-      "cCompilerExecutable": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
-      "cppCompilerExecutable": "C:\\Users\\richa\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    "3877520856": {
+      "cCompilerExecutable": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\Richard\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
     }
   },
   "cFileExtensions": [

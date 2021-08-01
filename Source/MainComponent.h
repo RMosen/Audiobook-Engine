@@ -71,7 +71,7 @@ public:
         stopButton.setColour (juce::TextButton::buttonColourId, juce::Colours::red);
         stopButton.setEnabled (false);
 
-        setSize (300, 200);
+        setSize (600, 600);
 
         formatManager.registerBasicFormats();       // [1]
         transportSource.addChangeListener (this);   // [2]
@@ -164,15 +164,16 @@ private:
 
     void openButtonClicked()
     {
-        juce::FileChooser chooser ("Select a Wave file to play...",
+            juce::FileChooser chooser ("Select a Wave file to play...",
                                    {},
                                    "*.wav");                                        // [7]
-
-        if (chooser.launchAsync(4, 4))
+ 
+        if (chooser.launchAsync(juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles,
+                                        [this] (const juce::FileChooser& fileChooser)                                         // [8]
         {
             auto file = chooser.getResult();                                        // [9]
             auto* reader = formatManager.createReaderFor (file);                    // [10]
-
+ 
             if (reader != nullptr)
             {
                 std::unique_ptr<juce::AudioFormatReaderSource> newSource (new juce::AudioFormatReaderSource (reader, true)); // [11]
