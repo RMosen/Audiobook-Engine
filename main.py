@@ -98,6 +98,9 @@ LOHome = [
      sg.FileBrowse()],
     [sg.Button('Load File', key='NHome')]]
 
+# ---Default Error Text
+ErrorText = 'Something went wrong'
+
 # ---Select Processes Screen
 LOProcess = [
     [sg.Text('Choose Processes', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
@@ -119,6 +122,7 @@ LOComp = [
 # --- Normalisation Screen
 LONorm = [
     [sg.Text('Normalisation', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Headroom:', size=(8, 1)), sg.InputText(key="VNorm", size=(4, 1), default_text='-0.5')],
     [sg.Button('Next', key='NNorm')]]
 
 # --- Background Noise Reduction Screen
@@ -142,43 +146,43 @@ LOEQ = [
     [sg.Frame('Manual EQ', [
         [sg.Frame('32', [
             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq32', enable_events=True)],
-            #[sg.InputText('0', size=(3, 1), key='ieq32', enable_events=True)]
+            # [sg.InputText('0', size=(3, 1), key='ieq32', enable_events=True)]
         ]),
          sg.Frame('64', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq64', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq64', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq64', enable_events=True)]
          ]),
          sg.Frame('125', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq125', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq125', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq125', enable_events=True)]
          ]),
          sg.Frame('250', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq250', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq250', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq250', enable_events=True)]
          ]),
          sg.Frame('500', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq500', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq500', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq500', enable_events=True)]
          ]),
          sg.Frame('1k', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq1k', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq1k', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq1k', enable_events=True)]
          ]),
          sg.Frame('2k', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq2k', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq2k', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq2k', enable_events=True)]
          ]),
          sg.Frame('4k', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq4k', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq4k', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq4k', enable_events=True)]
          ]),
          sg.Frame('8k', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq8k', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq8k', enable_events=True)]
+             # [sg.InputText(size=(3, 1), key='ieq8k', enable_events=True)]
          ]),
          sg.Frame('16k', [
              [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq16k', enable_events=True)],
-             #[sg.InputText(size=(3, 1), key='ieq16k', enable_events=True,)]
+             # [sg.InputText(size=(3, 1), key='ieq16k', enable_events=True,)]
          ])],
     ])],
     [sg.Button('Next', key='NEQ')]]
@@ -202,6 +206,12 @@ LOlibtest = [
 LOExport = [
     [sg.Text('Export', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
     [sg.Button('Next', key='NExport')]]
+
+# --- Error Screen
+LOError = [
+    [sg.Text(ErrorText, size=(40, 1), justification='center', font=("Helvetica", 15), relief=sg.RELIEF_RIDGE)],
+    [sg.Button('Close', key='NError')]
+]
 
 # --- Creating the wrapper layout
 layout = [[sg.Column(LOHome, key='-LOHome'),
@@ -227,6 +237,20 @@ EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 EQPSWeird = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
 # Create the Window
 window = sg.Window('Audiobook Engine', layout)
+
+window2 = sg.Window('Error', LOError, finalize=True)
+window2.hide()
+
+
+def errormsg():
+    window2.refresh()
+    window2.un_hide()
+    while True:
+        event2, values2 = window2.read()
+        if event2 == 'NError':
+            break
+    window2.hide()
+
 
 # Event Loop to process "events"
 while True:
@@ -325,14 +349,22 @@ while True:
 
 # ---Events for Normalisation Screen
     if event == 'NNorm':
-        print("Normalising...")
-        ABook = effects.normalize(ABook, headroom=0.1)
+        print(values['VNorm'])
+        if type(values['VNorm']) == str:
+            print('Not String')
+            if float(values['VNorm']) > float(0.0):
+                ErrorText = 'Please input a negative number'
+                errormsg()
+            else:
+                print("Normalising...")
+                ABook = effects.normalize(ABook, headroom=3.2)
 
-        window[Pages[Page]].update(visible=False)
-        Page = Page + 1
-        window[Pages[Page]].update(visible=True)
+                window[Pages[Page]].update(visible=False)
+                Page = Page + 1
+                window[Pages[Page]].update(visible=True)
+        else:
 
-# ---Events for Background Noise Reduction Screen
+    # ---Events for Background Noise Reduction Screen
     if event == 'NNR':
         print("Preparing Noise Reduction...")
 
@@ -375,7 +407,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Mouth Noise Reduction Screen
+    # ---Events for Mouth Noise Reduction Screen
     if event == 'NMNR':
         print("Reducing Mouth Noises...")
         ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
@@ -386,7 +418,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Vocal EQ Screen
+    # ---Events for Vocal EQ Screen
 
     # ---EQ Sliders
     if event == 'eq32' or 'eq64' or 'eq125' or 'eq250' or 'eq500' or 'eq1k' or 'eq2k' or 'eq4k' or 'eq8k' or 'eq16k':
@@ -432,52 +464,53 @@ while True:
     # ---Next Button
     if event == 'NEQ':
         print("Equalizing...")
+        RO = 2
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=32, bandwidth=21, filter_mode="peak",
+                                 gain_dB=values['eq32'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=64, bandwidth=43, filter_mode="peak",
+                                 gain_dB=values['eq64'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=125, bandwidth=79, filter_mode="peak",
+                                 gain_dB=values['eq125'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=250, bandwidth=171, filter_mode="peak",
+                                 gain_dB=values['eq250'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=500, bandwidth=329, filter_mode="peak",
+                                 gain_dB=values['eq500'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=1000, bandwidth=671, filter_mode="peak",
+                                 gain_dB=values['eq1k'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=1329, filter_mode="peak",
+                                 gain_dB=values['eq2k'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=4000, bandwidth=2671, filter_mode="peak",
+                                 gain_dB=values['eq4k'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=8000, bandwidth=5329, filter_mode="peak",
+                                 gain_dB=values['eq8k'], order=RO)
 
         # --- 32Hz
-        ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-                                 gain_dB=-30, order=2)
+        ABook = scipy_effects.eq(ABook, focus_freq=16000, bandwidth=10671, filter_mode="peak",
+                                 gain_dB=values['eq16k'], order=RO)
 
         window[Pages[Page]].update(visible=False)
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Silence Skipping Screen
+    # ---Events for Silence Skipping Screen
     if event == 'NSSkip':
         # ---Split file into non-silent sections
         print("Skipping Silence...")
@@ -507,7 +540,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Adjust Speed Screen
+    # ---Events for Adjust Speed Screen
     if event == 'NSpeed':
         print("Adjusting Speed...")
 
@@ -531,7 +564,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Librosa Test Screen
+    # ---Events for Librosa Test Screen
     if event == 'Nlibtest':
         print("Librosa Test...")
 
@@ -548,7 +581,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Export Screen
+    # ---Events for Export Screen
     if event == 'NExport':
         print("Exporting...")
         ABook.export("files/newtower.mp3", format="mp3")
@@ -556,6 +589,8 @@ while True:
         print("Now Playing")
         # play(ABook)
         print("Done")
+        time.sleep(1)
+        break
 
     if event in (sg.WIN_CLOSED, 'Cancel'):
         break
