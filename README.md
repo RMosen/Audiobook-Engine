@@ -32,34 +32,39 @@ The simple solution to restoring your Audiobooks
 
 ---Expanding on each feature
 
-	-Audio Compression
+-Audio Compression
+
 	Compression makes it so that there aren’t large changes in volume throughout the course of the audiobook. It does this by detecting any parts of the audio that go over a certain volume, and reducing the volume of those parts. Compression will leave your audiobook overall quieter than it was before, so it’s recommended that you use volume normalisation at the same time to bring the volume back up.
+	
+	Audio compression is powered by PyDub.
 
-Audio compression is powered by PyDub.
 
+-Volume Normalisation
 
-	-Volume Normalisation
 	Normalisation changes the overall volume of the audiobook to match a goal volume (by default, -0.1 db). This can be useful for bringing the volume up after an audiobook has had compression; if the audiobook was just recorded quietly to begin with; or if different files from the same audiobook are at different volumes.
 
-Volume Normalisation is powered by PyDub
+	Volume Normalisation is powered by PyDub
 
-	-Background Noise Reduction
+-Background Noise Reduction
+
 	Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise.
 
-Background noise reduction is powered by NoiseReduce, with help from PyDub for isolating periods of silence.
+	Background noise reduction is powered by NoiseReduce, with help from PyDub for isolating periods of silence.
 
-	-Mouth Noise Reduction
+-Mouth Noise Reduction
 	
 
-	-General EQ
+-General EQ
+	
 	This Equaliser is for making any adjustments to the way vocals sound on the recording. This could be used for reducing boom from lower voices, softening higher pitched voices, reducing nasality, or a host of other things. There are a variety of presets, but to get the best results it is possible to manually adjust the eq to any setting.
 
-This EQ is powered by PyDub
+	This EQ is powered by PyDub
 
-	-Silence Skipping
+-Silence Skipping
+
 	Silence skipping detects periods of silence in audiobooks and reduces them. There will still be short periods of silence left, so that the audiobook still sounds natural and (hopefully) not fatiguing. 
 
-Silence skipping is powered by PyDub
+	Silence skipping is powered by PyDub
 
 ---Planned features
 	- Dolby Noise Reduction
