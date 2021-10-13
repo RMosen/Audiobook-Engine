@@ -1,146 +1,132 @@
-from functools import partial
-import os
 import time
-import sys
-import unittest
-import inquirer
-import librosa
-import soundfile
 import numpy as np
 import noisereduce as nr
-from scipy.io import wavfile
-
-from colorama import Fore, Back, Style
-
-from tempfile import (
-    NamedTemporaryFile,
-    mkdtemp,
-    gettempdir
-)
-import tempfile
-import struct
-
-import simpleaudio as sa
-from playsound import playsound
-import pygame
-
 from pydub import (
     AudioSegment,
     silence,
     effects,
-    scipy_effects
-)
-
-from pydub.playback import play
-
-from pydub.audio_segment import extract_wav_headers
-from pydub.utils import (
-    db_to_float,
-    ratio_to_db,
-    make_chunks,
-    mediainfo,
-    get_encoder_name,
-    get_supported_decoders,
-    get_supported_encoders,
-)
-
+    scipy_effects)
 import PySimpleGUI as sg
 
-# ---Print Introduction Text
-print(Fore.MAGENTA + " ")
-print("   ▄████████ ███    █▄  ████████▄   ▄█   ▄██████▄  ▀█████████▄   ▄██████▄   ▄██████▄     ▄█   ▄█▄")
-print("  ███    ███ ███    ███ ███   ▀███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▄███▀")
-print("  ███    ███ ███    ███ ███    ███ ███▌ ███    ███   ███    ███ ███    ███ ███    ███   ███▐██▀")
-print("  ███    ███ ███    ███ ███    ███ ███▌ ███    ███  ▄███▄▄▄██▀  ███    ███ ███    ███  ▄█████▀   ")
-print("▀███████████ ███    ███ ███    ███ ███▌ ███    ███ ▀▀███▀▀▀██▄  ███    ███ ███    ███ ▀▀█████▄")
-print("  ███    ███ ███    ███ ███    ███ ███  ███    ███   ███    ██▄ ███    ███ ███    ███   ███▐██▄")
-print("  ███    ███ ███    ███ ███   ▄███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▀███▄")
-print("  ███    █▀  ████████▀  ████████▀  █▀    ▀██████▀  ▄█████████▀   ▀██████▀   ▀██████▀    ███   ▀█▀")
-print("                                                                                        ▀")
-print("             ▄████████ ███▄▄▄▄      ▄██████▄   ▄█  ███▄▄▄▄      ▄████████")
-print("            ███    ███ ███▀▀▀██▄   ███    ███ ███  ███▀▀▀██▄   ███    ███")
-print("            ███    █▀  ███   ███   ███    █▀  ███▌ ███   ███   ███    █▀")
-print("           ▄███▄▄▄     ███   ███  ▄███        ███▌ ███   ███  ▄███▄▄▄")
-print("          ▀▀███▀▀▀     ███   ███ ▀▀███ ████▄  ███▌ ███   ███ ▀▀███▀▀▀")
-print("            ███    █▄  ███   ███   ███    ███ ███  ███   ███   ███    █▄")
-print("            ███    ███ ███   ███   ███    ███ ███  ███   ███   ███    ███")
-print("            ██████████  ▀█   █▀    ████████▀  █▀    ▀█   █▀    ██████████  ")
-print(" ")
-print(Style.RESET_ALL)
+# You've just crossed over into...
 
-sg.theme('Default1')
+#    ▄████████ ███    █▄  ████████▄   ▄█   ▄██████▄  ▀█████████▄   ▄██████▄   ▄██████▄     ▄█   ▄█▄
+#   ███    ███ ███    ███ ███   ▀███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▄███▀
+#   ███    ███ ███    ███ ███    ███ ███▌ ███    ███   ███    ███ ███    ███ ███    ███   ███▐██▀
+#   ███    ███ ███    ███ ███    ███ ███▌ ███    ███  ▄███▄▄▄██▀  ███    ███ ███    ███  ▄█████▀
+# ▀███████████ ███    ███ ███    ███ ███▌ ███    ███ ▀▀███▀▀▀██▄  ███    ███ ███    ███ ▀▀█████▄
+#   ███    ███ ███    ███ ███    ███ ███  ███    ███   ███    ██▄ ███    ███ ███    ███   ███▐██▄
+#   ███    ███ ███    ███ ███   ▄███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▀███▄
+#   ███    █▀  ████████▀  ████████▀  █▀    ▀██████▀  ▄█████████▀   ▀██████▀   ▀██████▀    ███   ▀█▀
+#                                                                                         ▀
+#              ▄████████ ███▄▄▄▄      ▄██████▄   ▄█  ███▄▄▄▄      ▄████████
+#             ███    ███ ███▀▀▀██▄   ███    ███ ███  ███▀▀▀██▄   ███    ███
+#             ███    █▀  ███   ███   ███    █▀  ███▌ ███   ███   ███    █▀
+#            ▄███▄▄▄     ███   ███  ▄███        ███▌ ███   ███  ▄███▄▄▄
+#           ▀▀███▀▀▀     ███   ███ ▀▀███ ████▄  ███▌ ███   ███ ▀▀███▀▀▀
+#             ███    █▄  ███   ███   ███    ███ ███  ███   ███   ███    █▄
+#             ███    ███ ███   ███   ███    ███ ███  ███   ███   ███    ███
+#             ██████████  ▀█   █▀    ████████▀  █▀    ▀█   █▀    ██████████
+
+
+
+sg.LOOK_AND_FEEL_TABLE['ABETheme'] = {'BACKGROUND': '#180D2B',
+                                      'TEXT': '#FFF3CC',
+                                      'INPUT': '#FFFFFF',
+                                      'TEXT_INPUT': '#000000',
+                                      'SCROLL': '#F3CC49',
+                                      'BUTTON': ('#000000', '#F3CC49'),
+                                      'PROGRESS': ('#D1826B', '#CC8019'),
+                                      'BORDER': 1, 'SLIDER_DEPTH': 0,
+                                      'PROGRESS_DEPTH': 0, }
+
+sg.theme('ABETheme')
+
+# --- Setting the fonts
+Header = ("Century Schoolbook Bold", 25)
+HeaderC = '#F3CC49'
+HeaderBG = '#2F1042'
 
 # --- Creating the different pages in the program
 
 # --- Home screen
 LOHome = [
-    # [sg.Text("   ▄████████ ███    █▄  ████████▄   ▄█   ▄██████▄  ▀█████████▄   ▄██████▄   ▄██████▄     ▄█   ▄█▄")],
-    # [sg.Text("  ███    ███ ███    ███ ███   ▀███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▄███▀")],
-    # [sg.Text("  ███    ███ ███    ███ ███    ███ ███▌ ███    ███   ███    ███ ███    ███ ███    ███   ███▐██▀")],
-    # [sg.Text("  ███    ███ ███    ███ ███    ███ ███▌ ███    ███  ▄███▄▄▄██▀  ███    ███ ███    ███  ▄█████▀   ")],
-    # [sg.Text("▀███████████ ███    ███ ███    ███ ███▌ ███    ███ ▀▀███▀▀▀██▄  ███    ███ ███    ███ ▀▀█████▄")],
-    # [sg.Text("  ███    ███ ███    ███ ███    ███ ███  ███    ███   ███    ██▄ ███    ███ ███    ███   ███▐██▄")],
-    # [sg.Text("  ███    ███ ███    ███ ███   ▄███ ███  ███    ███   ███    ███ ███    ███ ███    ███   ███ ▀███▄")],
-    # [sg.Text("  ███    █▀  ████████▀  ████████▀  █▀    ▀██████▀  ▄█████████▀   ▀██████▀   ▀██████▀    ███   ▀█▀")],
-    # [sg.Text("                                                                                        ▀")],
-    # [sg.Text("             ▄████████ ███▄▄▄▄      ▄██████▄   ▄█  ███▄▄▄▄      ▄████████")],
-    # [sg.Text("            ███    ███ ███▀▀▀██▄   ███    ███ ███  ███▀▀▀██▄   ███    ███")],
-    # [sg.Text("            ███    █▀  ███   ███   ███    █▀  ███▌ ███   ███   ███    █▀")],
-    # [sg.Text("           ▄███▄▄▄     ███   ███  ▄███        ███▌ ███   ███  ▄███▄▄▄")],
-    # [sg.Text("          ▀▀███▀▀▀     ███   ███ ▀▀███ ████▄  ███▌ ███   ███ ▀▀███▀▀▀")],
-    # [sg.Text("            ███    █▄  ███   ███   ███    ███ ███  ███   ███   ███    █▄")],
-    # [sg.Text("            ███    ███ ███   ███   ███    ███ ███  ███   ███   ███    ███")],
-    # [sg.Text("            ██████████  ▀█   █▀    ████████▀  █▀    ▀█   █▀    ██████████  ")],
-    [sg.Text('Welcome To Audiobook Engine', size=(30, 1), justification='center', font=("Helvetica", 25),
-             relief=sg.RELIEF_RIDGE)],
+    [sg.Text(
+        'ㅤ       db        88        88  88888888ba,    88    ,ad8888ba,    88888888ba     ,ad8888ba,      ,ad8888ba,    88      a8P'
+        ' ㅤ      d88b       88        88  88      `"8b   88   d8"`    `"8b   88      "8b   d8"`    `"8b    d8"`    `"8b   88    ,88` '
+        ' ㅤ     d8``8b      88        88  88        `8b  88  d8`        `8b  88      ,8P  d8`        `8b  d8`        `8b  88  ,88"   '
+        ' ㅤ    d8`  `8b     88        88  88         88  88  88          88  88aaaaaa8P`  88          88  88          88  88,d88`    '
+        ' ㅤ   d8YaaaaY8b    88        88  88         88  88  88          88  88""""""8b,  88          88  88          88  8888"88,   '
+        ' ㅤ  d8""""""""8b   88        88  88         8P  88  Y8,        ,8P  88      `8b  Y8,        ,8P  Y8,        ,8P  88P   Y8b  '
+        ' ㅤ d8`        `8b  Y8a.    .a8P  88      .a8P   88   Y8a.    .a8P   88      a8P   Y8a.    .a8P    Y8a.    .a8P   88     "88,'
+        ' ㅤd8`          `8b  `"Y8888Y"`   88888888Y"`    88    `"Y8888Y"`    88888888P"     `"Y8888Y"`      `"Y8888Y"`    88       Y8b'
+        ' ㅤ                                                                                                                           '
+        'ㅤ ㅤ                                                                         ,ad88888888888888888888888888888ba,             '
+        ' ㅤ88888888888  888b      88    ,ad8888ba,   88  888b      88  88888888888     d8’                             ‘88            '
+        ' ㅤ88           8888b     88   d8"`    `"8b  88  8888b     88  88              88                               88            '
+        ' ㅤ88           88 `8b    88  d8`            88  88 `8b    88  88              88      ,d888888888888888b,      88            '
+        ' ㅤ88aaaaa      88  `8b   88  88             88  88  `8b   88  88aaaaa         88     dp’  ‘qh      dp’ ‘qb     88            '
+        ' ㅤ88"""""      88   `8b  88  88      88888  88  88   `8b  88  88"""""         88     qb.  .dY      Yb.  dp     88            '
+        ' ㅤ88           88    `8b 88  Y8,        88  88  88    `8b 88  88              88      ‘Y888888888888888Y’      88            '
+        ' ㅤ88           88     `8888   Y8a.    .a88  88  88     `8888  88              88                               88            '
+        ' ㅤ88888888888  88      `888    `"Y88888P"   88  88      `888  88888888888     88.   ,888888888888888888888,   ,88            '
+        'ㅤ                                                                            ‘Y8888888888888888888888888888888Y’',
+        size=(126, 19), font=("Courier New", 7), text_color='#F3CC49')],
     [sg.Text('Choose a file to be processed', justification='center')],
     [sg.InputText(key='-file1-', default_text='C:/Users/Richard/Documents/GitHub/Audiobooks/files/tower.wav'),
      sg.FileBrowse()],
-    [sg.Button('Load File', key='NHome')]]
+    [sg.Button('Load File', key='NHome')]
+]
 
 # ---Default Error Text
 ErrorText = 'Something went wrong'
 
 # ---Select Processes Screen
 LOProcess = [
-    [sg.Text('Choose Processes', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
-    [sg.Checkbox('Compression', default=False, key="-Comp-")],
-    [sg.Checkbox('Normalisation', default=False, key="-Norm-")],
-    [sg.Checkbox('Background Noise Reduction', default=False, key="-NR-")],
-    [sg.Checkbox('Mouth Noise Reduction', default=False, key="-MNR-")],
-    [sg.Checkbox('Vocal EQ', default=False, key="-EQ-")],
-    [sg.Checkbox('Silence Skipping', default=False, key="-SSkip-")],
-    [sg.Checkbox('Adjust Speed', default=False, key="-Speed-")],
-    [sg.Checkbox('Librosa Test', default=False, key="-libtest-")],
-    [sg.Button('Next', key='NProcesses')]]
+    [sg.Text('Choose Processes', size=(20, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
+    [sg.Frame('', [
+        [sg.Checkbox('Compression', default=False, key="-Comp-")],
+        [sg.Checkbox('Normalisation', default=False, key="-Norm-")],
+        [sg.Checkbox('Background Noise Reduction', default=False, key="-NR-")],
+        [sg.Checkbox('Mouth Noise Reduction', default=False, key="-MNR-")],
+        [sg.Checkbox('Vocal EQ', default=False, key="-EQ-")],
+        [sg.Checkbox('Silence Skipping', default=False, key="-SSkip-")],
+        [sg.Checkbox('Librosa Test', default=False, key="-libtest-")],
+    ], element_justification='Left', relief=sg.RELIEF_FLAT)],
+    [sg.Button('Next', key='NProcesses')]
+]
 
 # --- Compression Screen
 LOComp = [
-    [sg.Text('Compression', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Compression', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='NComp')]]
 
 # --- Normalisation Screen
 LONorm = [
-    [sg.Text('Normalisation', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Normalisation', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Text('Headroom:', size=(8, 1)), sg.InputText(key="VNorm", size=(4, 1), default_text='-0.5')],
     [sg.Button('Next', key='NNorm')]]
 
 # --- Background Noise Reduction Screen
 LONR = [
-    [sg.Text('Background Noise Reduction', size=(30, 1), justification='center', font=("Helvetica", 25),
-             relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Background Noise Reduction', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='NNR')]]
 
 # --- Mouth Noise Reduction Screen
 LOMNR = [
-    [sg.Text('Mouth Noise Reduction', size=(30, 1), justification='center', font=("Helvetica", 25),
-             relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Mouth Noise Reduction', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='NMNR')]]
 
 # --- Vocal EQ Screen
 LOEQ = [
-    [sg.Text('Vocal EQ', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
-    [sg.InputCombo(('Default', 'Boost Lows', 'Boost Highs', 'Weird'), default_value='Default', size=(20, 1),
+    [sg.Text('Vocal EQ', size=(32, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
+    [sg.InputCombo(('Default', 'Weird'), default_value='Default', size=(20, 1),
                    key='EQcombo',
                    enable_events=True)],
     [sg.Frame('Manual EQ', [
@@ -189,22 +175,20 @@ LOEQ = [
 
 # --- Silence Skipping Screen
 LOSSkip = [
-    [sg.Text('Silence Skipping', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Silence Skipping', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='NSSkip')]]
-
-# --- Adjust Speed Screen
-LOSpeed = [
-    [sg.Text('Adjust Speed', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
-    [sg.Button('Next', key='NSpeed')]]
 
 # --- Librosa Test Screen
 LOlibtest = [
-    [sg.Text('Librosa Test', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Librosa Test', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='Nlibtest')]]
 
 # --- Export Screen
 LOExport = [
-    [sg.Text('Export', size=(30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
+    [sg.Text('Export', size=(30, 1), justification='center', font=Header,
+             relief=sg.RELIEF_GROOVE, text_color=HeaderC, background_color=HeaderBG)],
     [sg.Button('Next', key='NExport')]]
 
 # --- Error Screen
@@ -214,19 +198,19 @@ LOError = [
 ]
 
 # --- Creating the wrapper layout
-layout = [[sg.Column(LOHome, key='-LOHome'),
-           sg.Column(LOProcess, visible=False, key='-LOProcess'),
-           sg.Column(LOComp, visible=False, key='-LOComp'),
-           sg.Column(LONorm, visible=False, key='-LONorm'),
-           sg.Column(LONR, visible=False, key='-LONR'),
-           sg.Column(LOMNR, visible=False, key='-LOMNR'),
-           sg.Column(LOEQ, visible=False, key='-LOEQ'),
-           sg.Column(LOSSkip, visible=False, key='-LOSSkip'),
-           sg.Column(LOSpeed, visible=False, key='-LOSpeed'),
-           sg.Column(LOlibtest, visible=False, key='-LOlibtest'),
-           sg.Column(LOExport, visible=False, key='-LOExport')
-           ],
-          [sg.Button('Exit')]]
+
+layout = [[sg.Frame('', [
+    [sg.Column(LOHome, key='-LOHome', element_justification='Centre', vertical_alignment='Centre'),
+     sg.Column(LOProcess, visible=False, key='-LOProcess', element_justification='Centre', vertical_alignment='Centre'),
+     sg.Column(LOComp, visible=False, key='-LOComp', element_justification='Centre'),
+     sg.Column(LONorm, visible=False, key='-LONorm', element_justification='Centre'),
+     sg.Column(LONR, visible=False, key='-LONR', element_justification='Centre'),
+     sg.Column(LOMNR, visible=False, key='-LOMNR', element_justification='Centre'),
+     sg.Column(LOEQ, visible=False, key='-LOEQ', element_justification='Centre'),
+     sg.Column(LOSSkip, visible=False, key='-LOSSkip', element_justification='Centre'),
+     sg.Column(LOlibtest, visible=False, key='-LOlibtest', element_justification='Centre'),
+     sg.Column(LOExport, visible=False, key='-LOExport', element_justification='Centre')]
+    ], background_color='#180D2B', border_width=10, relief=sg.RELIEF_FLAT, pad=20, element_justification='Center', vertical_alignment='Center')]]
 
 # ---Creating and populating the list of pages (To be added to on the processes page)
 Pages = ['-LOHome', '-LOProcess']
@@ -236,11 +220,24 @@ Page = 0
 EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 EQPSWeird = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
 # Create the Window
-window = sg.Window('Audiobook Engine', layout)
+window = sg.Window('Audiobook Engine',
+                   layout,
+                   no_titlebar=False,
+                   use_custom_titlebar=True,
+                   grab_anywhere=False,
+                   titlebar_background_color='#2F1042',
+                   titlebar_text_color='#ffffff',
+                   titlebar_font=('Helvetica', 11),
+                   margins=(12, 12),
+                   element_padding=5,
+                   element_justification='Center',
+                   font=('Arial Nova', 11),
+                   background_color='#F77959',
+                   titlebar_icon=''
+                   )
 
 window2 = sg.Window('Error', LOError, finalize=True)
 window2.hide()
-
 
 def errormsg():
     window2.refresh()
@@ -258,7 +255,7 @@ while True:
     if event in (None, 'Exit'):
         quit()
 
-# ---Events for Home Screen
+    # ---Events for Home Screen
     if event == 'NHome':
         print("Loading File...")
         filename = values['-file1-']
@@ -272,7 +269,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Processes Screen
+    # ---Events for Processes Screen
     if event == 'NProcesses':
         # --- Compression
         if values['-Comp-'] == True:
@@ -316,13 +313,6 @@ while True:
         else:
             SSkip = False
 
-        # --- Adjust Speed
-        if values['-Speed-'] == True:
-            Speed = True
-            Pages.append('-LOSpeed')
-        else:
-            Speed = False
-
         # --- Librosa Test
         if values['-libtest-'] == True:
             libtest = True
@@ -338,7 +328,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-# ---Events for Compression Screen
+    # ---Events for Compression Screen
     if event == 'NComp':
         print("Compressing...")
         ABook = effects.compress_dynamic_range(ABook, threshold=-20.0, ratio=6.0, attack=5.0, release=50.0)
@@ -362,7 +352,6 @@ while True:
                 window[Pages[Page]].update(visible=False)
                 Page = Page + 1
                 window[Pages[Page]].update(visible=True)
-        else:
 
     # ---Events for Background Noise Reduction Screen
     if event == 'NNR':
@@ -388,20 +377,18 @@ while True:
 
         # ---Saving it as it's own clip
         BGNoise = ABook[FStart:FEnd]
-        BGNoise.export("data/BG.wav", format="wav")
-        ABook.export("data/temp.wav", format="wav")
+        bgsamples = BGNoise.get_array_of_samples()
+        yNoise = np.array(bgsamples)
 
-        y, sr = librosa.load("data/temp.wav", sr=44100, mono=True, res_type='linear')
-        yNoise, sr = librosa.load("data/BG.wav", sr=44100, mono=True, res_type='linear')
+        samples = ABook.get_array_of_samples()
+        y= np.array(samples)
 
         # perform noise reduction
         print("Reducing Noise...")
-        reduced_noise = nr.reduce_noise(y=y, sr=sr, y_noise=yNoise, prop_decrease=0.5)
-
-        soundfile.write("data/temp.wav", data=reduced_noise, samplerate=44100)
+        reduced_noise = nr.reduce_noise(y=y, sr=44100, y_noise=yNoise, prop_decrease=0.5)
 
         # ---Loads new, shifted file up as ABook
-        ABook = AudioSegment.from_file("data/temp.wav", format="wav", frame_rate=44100, channels=1, sample_width=2)
+        ABook = ABook._spawn(reduced_noise)
 
         window[Pages[Page]].update(visible=False)
         Page = Page + 1
@@ -418,8 +405,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-    # ---Events for Vocal EQ Screen
-
+# ---Events for Vocal EQ Screen
     # ---EQ Sliders
     if event == 'eq32' or 'eq64' or 'eq125' or 'eq250' or 'eq500' or 'eq1k' or 'eq2k' or 'eq4k' or 'eq8k' or 'eq16k':
         window['EQcombo'].update('Custom')
@@ -540,31 +526,7 @@ while True:
         Page = Page + 1
         window[Pages[Page]].update(visible=True)
 
-    # ---Events for Adjust Speed Screen
-    if event == 'NSpeed':
-        print("Adjusting Speed...")
-
-        # --- Changes the frame rate of ABook to adjust speed (changes pitch too)
-        ABook = ABook._spawn(ABook.raw_data, overrides={'frame_rate': 48510})
-
-        # ---Export file so it can be loaded into librosa
-        ABook.export("data/temp.wav", format="wav")
-
-        # ---Load file into Librosa so it can be pitch shifted (Currently sounds bad)
-        y, sr = librosa.load("data/temp.wav", sr=44100, mono=True, res_type='linear')
-        y = ABook.get_array_of_samples()
-        y = librosa.effects.pitch_shift(y, n_steps=-1, sr=44100)
-        # --- Exports file again
-        soundfile.write("data/temp.wav", data=y, samplerate=44100)
-
-        # ---Loads new, shifted file up as ABook
-        ABook = AudioSegment.from_file("data/temp.wav", format="wav", frame_rate=44100, channels=1, sample_width=2)
-
-        window[Pages[Page]].update(visible=False)
-        Page = Page + 1
-        window[Pages[Page]].update(visible=True)
-
-    # ---Events for Librosa Test Screen
+# ---Events for Librosa Test Screen
     if event == 'Nlibtest':
         print("Librosa Test...")
 

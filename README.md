@@ -32,10 +32,11 @@ The simple solution to restoring your Audiobooks
 
 ---Expanding on each feature
 
-	-Audio Compression
-	Compression makes it so that there aren’t large changes in volume throughout the course of the audiobook. It does this by detecting any parts of the audio that go over a certain volume, and reducing the volume of those parts. Compression will leave your audiobook overall quieter than it was before, so it’s recommended that you use volume normalisation at the same time to bring the volume back up.
+-Audio Compression
+	Compression makes it so that there aren’t large changes in volume throughout the course of the audiobook.
+	It does this by detecting any parts of the audio that go over a certain volume, and reducing the volume of those parts. Compression will leave your audiobook overall quieter than it was before, so it’s recommended that you use volume normalisation at the same time to bring the volume back up.
 
-Audio compression is powered by PyDub.
+	Audio compression is powered by PyDub.
 
 
 	-Volume Normalisation

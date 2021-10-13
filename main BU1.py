@@ -271,25 +271,6 @@ if 'SilSkip' in jobs:
 
     ABook = Output
 
-if "Speed" in jobs:
-    print("Adjusting Speed...")
-
-    # --- Changes the frame rate of ABook to adjust speed (changes pitch too)
-    ABook = ABook._spawn(ABook.raw_data, overrides={'frame_rate': 48510})
-
-    # ---Export file so it can be loaded into librosa
-    ABook.export("data/temp.wav", format="wav")
-
-    # ---Load file into Librosa so it can be pitch shifted (Currently sounds bad)
-    y, sr = librosa.load("data/temp.wav", sr=44100, mono=True, res_type='linear')
-    y = ABook.get_array_of_samples()
-    y = librosa.effects.pitch_shift(y, n_steps=-1, sr=44100)
-    # --- Exports file again
-    soundfile.write("data/temp.wav", data=y, samplerate=44100)
-
-    # ---Loads new, shifted file up as ABook
-    ABook = AudioSegment.from_file("data/temp.wav", format="wav", frame_rate=44100, channels=1, sample_width=2)
-
 print("Exporting...")
 ABook.export("files/newtower.mp3", format="mp3")
 
