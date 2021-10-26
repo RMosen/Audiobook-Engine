@@ -2,8 +2,6 @@ import os.path
 import sys
 import time
 import re
-
-import eyed3
 import numpy as np
 import array
 import noisereduce as nr
