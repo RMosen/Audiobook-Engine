@@ -22,20 +22,23 @@ As well as several quality of life improvements such as:
 	<li>Helpful info boxes</li>
 </ul></div>
 
-
-	-overview of functions
-	This project utilises various pre-existing libraries to remove background hiss, poor volume mixing, unnecessary silences and other common problems with audiobooks. The goal is to make using these tools easy for anyone who doesn’t know a line of code, or a thing about audio production.
-
 	-over-all a/b
 	[embedded examples of audiobooks improved by the software]
-
----Prerequisites
-	-PyDub
-	-Librosa
-	-PySimpleGui
-	-NumPy
-	-Soundfile
-	-Noisereduce
+Built with:
+<div><ul>
+	<li><a href="https://github.com/jiaaro/pydub">PyDub</a></li>
+		Pydub is the backbone of this software. It handles importing/exporting audio as well as the compressor, normalisation,
+		equalisation, silence skipping and audio playback.
+	<li><a href="https://github.com/timsainb/noisereduce">noisereduce</a></li>
+		Noisereduce runs the background noise reduction part of the software. It's very impressive how well it works.
+	<li><a href="https://numpy.org/">NumPy</a></li>
+		NumPy is needed to convert Pydub's audio segments into a format that noisereduce can understand.
+	<li><a href="https://github.com/hamiltron/py-simple-audio">SimpleAudio</a></li>
+		The way audio playback is handled in Audiobook Engine is with Simpleaudio via Pydub's playback feature. Sometimes it worked out better to control the
+		audio directly through SimpleAudio, which is why it's here.
+	<li><a href="https://pysimplegui.readthedocs.io/en/latest/">PySimpleGui</a></li>
+		PySimpleGui handles the GUI for Audiobook Engine.
+</ul></div>
 
 --- Feature list
 	-Volume Normalisation
