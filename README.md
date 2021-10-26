@@ -3,10 +3,25 @@
 ![logoslogan](https://user-images.githubusercontent.com/56782487/138974838-157e18d0-f6c3-4713-b925-e80b3420073d.png)
 
 
----About this project
+Audiobook Engine is a tool for restoring the sound quality of audiobooks, with a particular focus on audiobooks ripped from cassettes.
 
-	-Justification
-	 This project aims to be a simple solution to restoring the sound quality of audiobooks. The main target is audiobooks recorded from cassettes, but it should be a fairly universal solution.
+It's audio processing features include:
+<div><ul>
+	<li>Noise Reduction</li>
+	<li>Compression</li>
+	<li>Volume Normalisation</li>
+	<li>10 Band Equaliser</li>
+	<li>Silence Skipping</li>
+</ul></div>
+
+As well as several quality of life improvements such as:
+<div><ul>
+	<li>Batch Processing</li>
+	<li>In App Playback</li>
+	<li>Diverse inbuilt presets</li>
+	<li>Helpful info boxes</li>
+</ul></div>
+
 
 	-overview of functions
 	This project utilises various pre-existing libraries to remove background hiss, poor volume mixing, unnecessary silences and other common problems with audiobooks. The goal is to make using these tools easy for anyone who doesn’t know a line of code, or a thing about audio production.
