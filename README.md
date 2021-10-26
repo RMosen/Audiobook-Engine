@@ -1,7 +1,7 @@
 # Audiobook-Engine
 
-[LOGO]
-The simple solution to restoring your Audiobooks
+![logoslogan](https://user-images.githubusercontent.com/56782487/138974838-157e18d0-f6c3-4713-b925-e80b3420073d.png)
+
 
 ---About this project
 
