@@ -1,10 +1,15 @@
 ![logoslogan](https://user-images.githubusercontent.com/56782487/138986594-54a85c97-9381-45c6-a8ff-ee7893cecca4.png)
 
-# Audiobook-Engine
+# Audiobook Engine
 
-Audiobook Engine is a tool for restoring the sound quality of audiobooks, with a particular focus on audiobooks ripped from cassettes.
+Audiobook Engine is a piece of software designed to make the restoration of audiobooks simple and achievable for everyone.
 
-It's audio processing features include:
+Thousands of audiobooks have only ever been released on cassette, and cassettes degrade over time. Eventually, those cassettes will be unlistenable, and the audiobooks that have never been digitised will be lost. That’s why I created Audiobook Engine. Built to be easy to use, Audiobook Engine is designed to help anyone remove the damage that time has done to audiobooks, and sometimes make them sound better than ever before.
+
+Audiobook Engine does not currently preform the initial task of digitising your cassettes (How-To Geek has <a href='https://www.howtogeek.com/177084/how-to-digitizebackup-cassette-tapes-and-other-old-media/'>a great guide</a> on how to do that though). What it does do is take the audio files that you have generated through digitising your cassettes and helps you to get them sounding good as new.
+
+
+Audiobook Engine has five main processes that I’ve found are all that is needed to restore almost any audiobook. They are:
 <div><ul>
 	<li>Noise Reduction</li>
 	<li>Compression</li>
