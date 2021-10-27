@@ -1,6 +1,6 @@
 # Audiobook-Engine
 
-![logoslogan](https://user-images.githubusercontent.com/56782487/138974838-157e18d0-f6c3-4713-b925-e80b3420073d.png)
+![logoslogan](https://user-images.githubusercontent.com/56782487/138986594-54a85c97-9381-45c6-a8ff-ee7893cecca4.png)
 
 
 Audiobook Engine is a tool for restoring the sound quality of audiobooks, with a particular focus on audiobooks ripped from cassettes.
@@ -42,36 +42,43 @@ As well as several quality of life improvements such as:
 
 <b>Features</b>
 
--Background Noise Reduction
-![BNR](https://user-images.githubusercontent.com/56782487/138979962-dba3ca2c-3bc7-4bee-a8fd-26ee294de81c.png)
+<br>
+<b>Background Noise Reduction</b>
+<img src="https://user-images.githubusercontent.com/56782487/138979962-dba3ca2c-3bc7-4bee-a8fd-26ee294de81c.png" width="60%">
 
-Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise.
+Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise. I'd say that for most audiobooks ripped from cassettes, this is the most important feature.
 
-Background noise reduction is powered by <a href="https://github.com/timsainb/noisereduce">noisereduce</a>, with help from <a href="https://github.com/jiaaro/pydub">PyDub</a> for isolating periods of silence.
+The only adjustable value on this page is noise reduction ammount, which is pretty self explainitory. A lower percentage will do less to reduce the background noise, and vice versa.
 
--Audio Compression
+<br>
+<b>Compression</b><br>
+<img src="https://user-images.githubusercontent.com/56782487/138980333-8ba6351f-dc09-48fa-91cd-b0c54e931264.PNG" width="60%">
 
-	Compression makes it so that there aren’t large changes in volume throughout the course of the audiobook. It does this by detecting any parts of the audio that go over a certain volume, and reducing the volume of those parts. Compression will leave your audiobook overall quieter than it was before, so it’s recommended that you use volume normalisation at the same time to bring the volume back up.
+Compression makes it so that there aren’t large changes in volume throughout the course of the audiobook. It does this by detecting any parts of the audio that go over a certain volume, and reducing the volume of those parts. Compression will leave your audiobook overall quieter than it was before, so it’s recommended that you use volume normalisation at the same time to bring the volume back up.
+
+There are four controls on the compression page:<br>
+<div><ul>
+	<li>Threshold is the volume that audio has to go over to be effected by the compressor. Set this lower if the compressor doesn't seem to be doing anything and higher if all it's doing is making the audio quieter (it will be quieter overall anyway)</li>
+	<li>Ratio is the ammount the voulme will be reduced by when part of the audiobook goes over the volume set by the Threshold. Set this number higher to make the compressor more effective, but having it too high can sound weird, so use with caution.</li>
+	<li>The attack specifies how long it takes the compressor to lower the volume by the ratio specified by the ratio box after it goes over the volume specified in the threshold box. Setting this number lower makes the volume more consistent, but it makes the volume changes very unnatural sounding.</li>
+	<li>The release specifies how long it takes the compressor to turn off after the volume of the audiobook goes below the threshold. Having this number too low can make parts of the audiobook quieter that you would like, but too high can sound unnatural.			
+</ul></div>
+
+On the internet there are a lot of guides on how to use an audio compressor that are far more comprehensive than mine, so look at some of those if you want to know more.
+
+<br><br>
+<b>Volume Normalisation</b><br>
+<img src="https://user-images.githubusercontent.com/56782487/138981581-6d50d61f-9be5-42d0-8dfc-f34301fd2453.PNG" width="60%">
+
+Normalisation changes the overall volume of the audiobook to match a goal volume (by default, 0.0 dB). This can be useful for bringing the volume up after an audiobook has had compression; if the audiobook was just recorded quietly to begin with; or if different files from the same audiobook are at different volumes.
+
+There is only one input for normalisation and it's the target volme that the audio will be normalised to. 0dB is normally the maximum volume that you can have an audio file at before it starts causing problems such as clipping, so I recomend just keeping it at that. Lowering the value will give you a quieter file and raising it will give you a louder file.
 	
-	Audio compression is powered by PyDub.
+<br><br>
+<b>Vocal EQ</b><br>
+<img src="https://user-images.githubusercontent.com/56782487/138984795-c46fc9a4-e692-4bba-aa32-c4651456f535.PNG" width="60%">
 
-
--Volume Normalisation
-
-	Normalisation changes the overall volume of the audiobook to match a goal volume (by default, -0.1 db). This can be useful for bringing the volume up after an audiobook has had compression; if the audiobook was just recorded quietly to begin with; or if different files from the same audiobook are at different volumes.
-
-	Volume Normalisation is powered by PyDub
-
-
-
--Mouth Noise Reduction
-	
-
--General EQ
-	
-	This Equaliser is for making any adjustments to the way vocals sound on the recording. This could be used for reducing boom from lower voices, softening higher pitched voices, reducing nasality, or a host of other things. There are a variety of presets, but to get the best results it is possible to manually adjust the eq to any setting.
-
-	This EQ is powered by PyDub
+This Equaliser is for making any adjustments to the way vocals sound on the recording. This could be used for reducing boom from lower voices, softening higher pitched voices, reducing nasality, or a bunch of other things. It does this by raising or lowering the volume of different frequencies in the audiobook.
 
 -Silence Skipping
 
