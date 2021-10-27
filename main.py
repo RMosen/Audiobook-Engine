@@ -102,7 +102,7 @@ LONR = [
                    key='NRCombo',
                    enable_events=True)],
     [sg.Frame('Noise Reduction Amount', [
-        [sg.InputText(key="VNR", size=(4, 1), default_text='50'), sg.Text('%')]
+        [sg.InputText(key="VNR", size=(4, 1), default_text='50', pad=(0, 30)), sg.Text('%')]
     ], element_justification='c')],
 
     [sg.Button('Apply', key='applyNR', enable_events=True),
@@ -156,7 +156,7 @@ LONorm = [
     [sg.InputCombo(('Default', 'Basic'), default_value='Default', size=(20, 1),
                    key='NormCombo',
                    enable_events=True)],
-    [sg.Frame('Normalisation', [
+    [sg.Frame('Normalisation Target', [
         # [sg.Text('Headroom:', size=(8, 1)), sg.InputText(key="VNorm", size=(4, 1), default_text='0')]
         [sg.Slider(range=(-20, 5), default_value=0, orientation='h', key='VNorm',
                    enable_events=True, pad=20, resolution=0.5, )]
@@ -1072,7 +1072,7 @@ while True:
                               ' to be effected by the compressor.\n\n'
                               "Set this lower if the compressor doesn't seem to be doing anything,"
                               " and higher if all it's doing is making the audio quieter (it will be quieter overall "
-                              "anyway)")
+                              "anyway).")
 
     if event == 'infoCompRatio':
         window['info'].update('When part of the audiobook goes over the volume set by the Threshold, it will be reduced'
@@ -1085,7 +1085,7 @@ while True:
                               ' specified by the ratio box after it goes over the'
                               ' volume specified in the threshold box.\n\n'
                               'Setting this number lower makes the volume more consistent, but it makes the volume'
-                              ' changes very unnatural sounding')
+                              ' changes very unnatural sounding.')
 
     if event == 'infoCompRelease':
         window['info'].update('The release specifies how long it takes the compressor to turn off after the volume'
