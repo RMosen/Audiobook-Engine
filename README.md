@@ -24,7 +24,7 @@ As well as several quality of life improvements such as:
 
 	-over-all a/b
 	[embedded examples of audiobooks improved by the software]
-Built with:
+<b>Built with:</b>
 <div><ul>
 	<li><a href="https://github.com/jiaaro/pydub">PyDub</a></li>
 		Pydub is the backbone of this software. It handles importing/exporting audio as well as the compressor, normalisation,
@@ -40,15 +40,14 @@ Built with:
 		PySimpleGui handles the GUI for Audiobook Engine.
 </ul></div>
 
---- Feature list
-	-Volume Normalisation
-	-Audio Compression
-	-Background Noise Reduction
-	-Mouth Noise Reduction
-	-General EQ
-	-Silence Skipping
+<b>Features</b>
 
----Expanding on each feature
+-Background Noise Reduction
+![BNR](https://user-images.githubusercontent.com/56782487/138979962-dba3ca2c-3bc7-4bee-a8fd-26ee294de81c.png)
+
+Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise.
+
+Background noise reduction is powered by <a href="https://github.com/timsainb/noisereduce">noisereduce</a>, with help from <a href="https://github.com/jiaaro/pydub">PyDub</a> for isolating periods of silence.
 
 -Audio Compression
 
@@ -63,11 +62,7 @@ Built with:
 
 	Volume Normalisation is powered by PyDub
 
--Background Noise Reduction
 
-	Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise.
-
-	Background noise reduction is powered by NoiseReduce, with help from PyDub for isolating periods of silence.
 
 -Mouth Noise Reduction
 	
