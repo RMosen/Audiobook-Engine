@@ -80,14 +80,28 @@ There is only one input for normalisation and it's the target volme that the aud
 
 This Equaliser is for making any adjustments to the way vocals sound on the recording. This could be used for reducing boom from lower voices, softening higher pitched voices, reducing nasality, or a bunch of other things. It does this by raising or lowering the volume of different frequencies in the audiobook.
 
--Silence Skipping
+There is only one input for the equaliser, but it's repeated ten times. Each slider raises or lowers the frequency listed, and the surrounding frequencies, by the ammount selected.
 
-	Silence skipping detects periods of silence in audiobooks and reduces them. There will still be short periods of silence left, so that the audiobook still sounds natural and (hopefully) not fatiguing. 
+<br><br>
+<b>Silence Skipping</b><br>
+<img src="https://user-images.githubusercontent.com/56782487/138987490-e2d570ed-20fc-400b-94f5-f12b87e71f22.PNG" width="60%">
 
-	Silence skipping is powered by PyDub
+Silence skipping detects periods of silence in audiobooks and reduces them. There will still be short periods of silence left, so that the audiobook still sounds natural and non-fatiguing. 
 
----Planned features
+There are four controls on the Silence Skipping page:<br>
+<div><ul>
+	<li>The Minimum Silence is how long a period of silence has to be before it will be shortened. Raising this value will mean that periods of silence have to be longer before they will be removed, and vice versa.</li>
+	<li>The Silence Threshold is the volume that the audio has to go below before it counts as silence. If the silence skipping doesn't appear to be working, try raising this value. If too much is being skipped (including the beginnings and ends of words) try lowering this value.</li>
+	<li>The Keep Silence value tells the program how much silence to keep when silence is being skipped. This helps prevent there being absolutely no silence in the audiobook, which can sound fatiguing.</li>
+	<li>The Searching Step value controls how often the program checks to see if the audiobook is silent or not. For example, if Seek Step is set to 5ms, it will check for silence every five milliseconds. The only reason to raise this number is to make the program run quicker.</li>
+</ul></div>
+
+<b>Planned features</b>
 	- Dolby Noise Reduction
+<div><ul>
+	<li>Dolby Noise Reduction Decoding</li>
+	<li>Mouth Noise Reduction</li>
+</ul></div>
 
 ---Licence
 	-GNU General Public License v3.0
