@@ -359,7 +359,6 @@ layout = [
                  sg.Tab('NR', LONR, visible=False, disabled=True, key='-LONR', element_justification='c'),
                  sg.Tab('Comp', LOComp, visible=False, disabled=True, key='-LOComp', element_justification='c'),
                  sg.Tab('Norm', LONorm, visible=False, disabled=True, key='-LONorm', element_justification='c'),
-                 sg.Tab('MNR', LOMNR, visible=False, disabled=True, key='-LOMNR', element_justification='c'),
                  sg.Tab('EQ', LOEQ, visible=False, disabled=True, key='-LOEQ', element_justification='c'),
                  sg.Tab('SSkip', LOSSkip, visible=False, disabled=True, key='-LOSSkip', element_justification='c'),
                  sg.Tab('Export', LOExport, visible=False, disabled=True, key='-LOExport', element_justification='c'),
