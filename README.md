@@ -146,6 +146,6 @@ There are four controls on the Silence Skipping page:<br>
 <h1 id="Licence">Licence</h1>
 <a href="https://tldrlegal.com/license/mit-license">MIT</a>
 
-<h1 id="Sources">Sources:</h1>
+<h1 id="Sources">Sources</h1>
 
 <p id="1">[1] Schuller, D. (2001). Preserving the Facts for the Future: Principles and Practices for the Transfer of Analog Audio Documents into the Digital Domain. JAES, 49(7/8), 618–621.</p>
