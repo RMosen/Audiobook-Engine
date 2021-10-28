@@ -94,7 +94,6 @@ sg.LOOK_AND_FEEL_TABLE['ABETheme'] = {'BACKGROUND': '#180D2B',
                                       'PROGRESS': ('#D1826B', '#CC8019'),
                                       'BORDER': 1, 'SLIDER_DEPTH': 0,
                                       'PROGRESS_DEPTH': 0, }
-
 sg.theme('ABETheme')
 
 # --- Setting the fonts
@@ -122,9 +121,6 @@ LOHome = [
      ]
 ]
 
-# ---Default Error Text
-ErrorText = 'Something went wrong'
-
 # ---Select Processes Screen
 LOProcess = [
     [sg.Text('Choose Processes', justification='center', font=Header, text_color=HeaderC)],
@@ -135,8 +131,6 @@ LOProcess = [
          sg.Checkbox('Compression', default=False, key="-Comp-")],
         [sg.Text('🛈', key='infoPrNorm', enable_events=True, text_color=infoc),
          sg.Checkbox('Normalisation', default=False, key="-Norm-")],
-        [sg.Text('🛈', key='infoPrMNR', enable_events=True, text_color=infoc, visible=False),
-         sg.Checkbox('Mouth Noise Reduction', default=False, key="-MNR-", visible=False)],
         [sg.Text('🛈', key='infoPrEQ', enable_events=True, text_color=infoc),
          sg.Checkbox('Vocal EQ', default=False, key="-EQ-")],
         [sg.Text('🛈', key='infoPrSSkip', enable_events=True, text_color=infoc),
@@ -208,13 +202,6 @@ LONorm = [
      sg.Button('⟲', key='undoNorm', enable_events=True, disabled=True)]
 ]
 
-# --- Mouth Noise Reduction Screen (Unused so far)
-LOMNR = [
-    [sg.Text('Mouth Noise Reduction', justification='center', font=Header, text_color=HeaderC)],
-
-    [sg.Button('Apply', key='applyMNR', enable_events=True),
-     sg.Button('⟲', key='undoMNR', enable_events=True, disabled=True)]
-]
 
 # --- Vocal EQ Screen
 LOEQ = [
@@ -301,6 +288,7 @@ LOSSkip = [
     ])]
 ]
 
+# --- Defining ExportFormat
 ExportFormat = ('mp3', '.mp3')
 # --- Export Screen
 LOExport = [
@@ -314,6 +302,8 @@ LOExport = [
     [sg.Button('Restart', key='Restart', visible=False)]
 ]
 
+
+# --- Info Box
 LOInfo = [
     [sg.Text('Info')],
     [sg.Frame('', [
@@ -322,13 +312,8 @@ LOInfo = [
     ], background_color=HeaderBG)]
 ]
 
-# --- Error Screen
-LOError = [
-    [sg.Text(ErrorText, size=(40, 1), justification='center', font=("Helvetica", 15), relief=sg.RELIEF_RIDGE)],
-    [sg.Button('Close', key='NError')]
-]
 
-# --- Player1 (For Screens without audio editing capabilities)
+# --- Audio Player1 (For Screens without audio editing capabilities)
 LOPlay1 = [
     [sg.Frame('', [[sg.Text('Play/Stop', background_color=HeaderBG),
                     sg.Button('▶', key='play', disabled=True, size=(4, 2)),
@@ -337,7 +322,7 @@ LOPlay1 = [
               pad=(0, 20))]
 ]
 
-# --- Player2 (For Screens with audio editing capabilities)
+# --- Audio Player2 (For Screens with audio editing capabilities)
 LOPlay2 = [
     [sg.Frame('', [[sg.Frame('', [[sg.Text('Original', background_color=HeaderBG, size=(6, 1)),
                                    sg.Button('▶', key='play2', disabled=True, size=(2, 1))],
@@ -387,8 +372,12 @@ layout = [
                 tab_location='topleft',
                 key='MainFrame',
             )],
+
+            # ---The two notification bars that appear just above Next/Skip
             [sg.Text('', key='ExportBar', justification='c', visible=False)],
             [sg.Text('', key='NBar', justification='c', visible=True)],
+
+            # ---The Audio Player
             [sg.TabGroup([
                 [sg.Tab('Player', LOPlay1, visible=True, disabled=False, key='-LOPlay1', element_justification='c',
                         background_color=HeaderBG),
@@ -401,11 +390,13 @@ layout = [
                 pad=4
             ),
 
+                # --- The Next/Skip buttons and the spacer
                 sg.Column(LONext, visible=True, key='-LONext', element_justification='c', pad=(110, 0)),
                 sg.Column(LOSpacer, visible=True, key='-LOSpacer', element_justification='c', pad=(5, 0)),
             ]
         ], element_justification='c', border_width=0),
 
+        # --- The Info Box
          sg.Column(LOInfo, visible=False, key='-LOInfo', element_justification='c')]
     ], background_color='#180D2B', border_width=10, relief=sg.RELIEF_FLAT, pad=20, element_justification='c')]
 ]
@@ -432,17 +423,19 @@ window = sg.Window('Audiobook Engine',
                    resizable=False,
                    )
 
+# --- Defining a couple things
 skip = False
 count = 0
+
 # Event Loop to process events in the program
 while True:
     event, values = window.read()
     if event in (None, 'Exit'):
         sys.exit()
 
-
     # print(event)
 
+    # ---Events for the play button
     if event in ['play', 'play3']:
         print('Play')
         sa.stop_all()
@@ -451,7 +444,7 @@ while True:
         window.refresh()
         playback._play_with_simpleaudio(ABook)
 
-    # ---What happens when you press play original
+    # ---Events for play original button
     if event == 'play2':
         print('Play2')
         sa.stop_all()
@@ -460,7 +453,7 @@ while True:
         window.refresh()
         playback._play_with_simpleaudio(Prev)
 
-    # ---What happens when you press stop
+    # ---Events for stop button
     if event in ['stop', 'stop2']:
         window['stop'].update(disabled=True)
         window['stop2'].update(disabled=True)
@@ -495,7 +488,10 @@ while True:
 
     # ---What happens when you click next
     if event == '-next-':
+
+        # ---The edited audiobook becomes the backup state when you press next
         Prev = ABook
+
         sa.stop_all()
         window['NBar'].update('')
         window['play3'].update(disabled=True)
@@ -513,6 +509,7 @@ while True:
         window['info'].update("Click on one of the 🛈's to see more information.")
 
         # --- Events for Processes page
+        # --- Checks to see if a box is ticked, and adds it to the list of pages if so
         if Pages[Page] == "-LOProcess":
             # --- Background Noise Reduction
             if values['-NR-'] == True:
@@ -563,13 +560,12 @@ while True:
         # --- Progress main page to next screen
         Page = Page + 1
         window[Pages[Page]].select()
-
         window[Pages[(Page - 1)]].update(visible=False, disabled=True)
 
+        # --- Removing a page from the export task list if the page is skipped
         if skip == True:
             Pages.remove(Pages[Page - 1])
             Page = Page - 1
-
         skip = False
 
         print(Pages[Page])
@@ -583,6 +579,7 @@ while True:
             window['-LOPlay1'].update(visible=False, disabled=True)
             window['-skip-'].update(visible=True)
 
+        # --- Disables/Hides the next button for certain pages
         if Pages[Page] == "-LOProcess":
             window['-next-'].update(disabled=False)
 
@@ -608,7 +605,7 @@ while True:
         window['undoSS'].update(disabled=True)
         window.refresh()
 
-        # --Home Page (This one is for the Browse Button)
+        # --Home Page (What happens when you click the browse button)
         if Pages[Page] == '-LOHome':
             print("Loading File...")
             window['NBar'].update('Loading File...')
@@ -632,33 +629,41 @@ while True:
                 print("Loading: ", filelist[0])
 
                 # ---Import Audio File
+                # --- Initially, only 60 seconds of the file is loaded, that makes messing around with settings faster
+                # --- Files are imported in mono. Audiobooks don't need to be in stereo
                 ABook = AudioSegment.from_file(filelist[0], channels=1, sample_width=2, frame_rate=44100, duration=60)
+                # --- Creating Prev, the "Undo" state of the process
                 Prev = ABook
                 print("File Loaded")
                 window['NBar'].update('File Loaded')
                 window.refresh()
                 window['-next-'].update(disabled=False)
 
+        # --- Resetting the active file to the backup whenever a new effect is applied
         if Pages[Page] != '-LOHome':
             ABook = Prev
 
+        # --- This area will loop if the program is exporting multiple files
         exporting = 1
         while exporting == 1:
 
-            # --Export1
+            # --Exporting Part 1
             print('Pages:', Pages)
             if Pages[Page] == '-LOExport':
                 if exporting == 0:
                     count = 0
                     exporting = 1
 
+                # --- Loading the full audiobook for processing
                 ABook = AudioSegment.from_file(filelist[count], channels=1, sample_width=2, frame_rate=44100)
-                window['NBar'].update('Preparing to export...')
+                # ---Showing a second notification bar that shows "Processing 1 of 2" while the file is exporting
                 window['ExportBar'].update(visible=True)
                 progress = str('Processing file ' + str(count + 1) + ' of ' + str(filecount))
                 print(progress)
                 window['ExportBar'].update(progress)
+                window['NBar'].update('Preparing to Export...')
                 window.refresh()
+                # --- A short sleep so that people see "Preparing to Export..." for a half second before it changes
                 time.sleep(0.5)
 
             # --Noise Reduction
@@ -667,14 +672,15 @@ while True:
                 window['NBar'].update('Preparing Background Noise Reduction...')
                 window.refresh()
 
+                # ---Reading input values
                 NoiseReduction = int(values['VNR'])
                 NoiseReduction = (NoiseReduction * 0.01)
 
                 # ---Creating a sample of the background hiss
                 # ---Detecting periods of silence over 700ms, then creating a list
-                silenceList = dict(silence.detect_silence(ABook, min_silence_len=1200, silence_thresh=-22, seek_step=1))
+                silenceList = dict(silence.detect_silence(ABook, min_silence_len=700, silence_thresh=-22, seek_step=3))
                 keyList = [key for key in silenceList]
-                print(silenceList)
+                # print(silenceList)
 
                 # ---Extracting the start and end points of the first period of silence
                 FStart = (keyList[0])
@@ -684,14 +690,15 @@ while True:
                 FStart = FStart + 150
                 FEnd = FEnd - 150
 
-                print("FStart: ", FStart)
-                print("FEnd: ", FEnd)
+                # print("FStart: ", FStart)
+                # print("FEnd: ", FEnd)
 
-                # ---Saving it as it's own clip
+                # ---Saving the silence it as it's own clip, then converting it to a NumPy array
                 BGNoise = ABook[FStart:FEnd]
                 bgsamples = BGNoise.get_array_of_samples()
                 yNoise = np.array(bgsamples)
 
+                # ---Converting ABook into a NumPy array
                 samples = ABook.get_array_of_samples()
                 y = np.array(samples)
 
@@ -701,7 +708,7 @@ while True:
                 window.refresh()
                 reduced_noise = nr.reduce_noise(y=y, sr=44100, y_noise=yNoise, prop_decrease=NoiseReduction)
 
-                # ---Loads new, shifted file up as ABook
+                # ---Converting file back to PyDub Segment
                 shifted_samples_array = array.array(ABook.array_type, reduced_noise)
                 ABook = ABook._spawn(shifted_samples_array)
                 window['NBar'].update('Background Noise Reduced')
@@ -712,11 +719,14 @@ while True:
                 print("Compressing...")
                 window['NBar'].update('Compressing (this may take a while)...')
                 window.refresh()
+
+                # ---Reading input values
                 threshold = int(values['CompThreshold'])
                 ratio = int(values['CompRatio'])
                 attack = int(values['CompAttack'])
                 release = int(values['CompRelease'])
 
+                # ---Applying compression
                 ABook = effects.compress_dynamic_range(ABook, threshold=threshold, ratio=ratio, attack=attack,
                                                        release=release)
 
@@ -726,23 +736,20 @@ while True:
             # --Normalisation
             if '-LONorm' in Pages and Pages[Page] in ['-LONorm', '-LOExport']:
                 print(values['VNorm'])
+
+                # ---Reading input values
                 normvalue = float(values['VNorm'])
                 normvalue = (normvalue * -1)
+
                 print("Normalising...")
-                print(normvalue)
+                # print(normvalue)
                 window['NBar'].update('Normalising...')
                 window.refresh()
+
+                # ---Applying normalisation
                 ABook = effects.normalize(ABook, headroom=normvalue)
                 window['NBar'].update('Normalisation Completed')
                 window.refresh()
-
-            # --Mouth Noise Reduction
-            # if '-LOMNR' in Pages and Pages[Page] in ['-LOMNR', '-LOExport']:
-            #     print("Reducing Mouth Noises...")
-            #     window['NBar'].update('Reducing Mouth Noises...')
-            #     window.refresh()
-            #     ABook = scipy_effects.eq(ABook, focus_freq=2000, bandwidth=100, channel_mode="L+R", filter_mode="peak",
-            #                              gain_dB=-30, order=2)
 
             # --Equaliser
             if '-LOEQ' in Pages and Pages[Page] in ['-LOEQ', '-LOExport']:
@@ -750,7 +757,6 @@ while True:
                 window['NBar'].update('Equalizing...')
                 window.refresh()
                 RO = 2
-
                 ABook = ABook - 10
 
                 # --- 32Hz
@@ -758,6 +764,7 @@ while True:
                 window['NBar'].update('Equalizing 0% Completed')
                 window.refresh()
                 # if values['eq32'] != 0:
+                # --- Applying Eq (reading the input slider is done inline)
                 ABook = scipy_effects.eq(ABook, focus_freq=32, bandwidth=21, filter_mode="peak",
                                          gain_dB=values['eq32'], order=RO)
 
@@ -830,24 +837,28 @@ while True:
 
             # --Silence Skipper
             if '-LOSSkip' in Pages and Pages[Page] in ['-LOSSkip', '-LOExport']:
+
+                # ---Reading input values
                 SSMin = int(values['SSMin'])
                 SSThresh = int(values['SSThresh'])
                 SSKeep = int(values['SSKeep'])
                 SSStep = int(values['SSStep'])
 
-                # ---Split file into non-silent sections
                 print("Skipping Silence...")
                 window['NBar'].update('Skipping Silence...')
                 window.refresh()
+
+                # ---Split file into non-silent sections
                 Short = silence.split_on_silence(ABook, min_silence_len=SSMin, silence_thresh=SSThresh, seek_step=SSStep,
                                                  keep_silence=SSKeep)
                 print("Segments Split")
 
                 # --- Determine how many audio segments the silence skipper generated
                 partnu = len(Short)
-                print(Short)
-                print(partnu)
+                # print(Short)
+                # print(partnu)
 
+                # ---Making sure that there were segments generated (Otherwise there is no audio and things break)
                 if partnu == 0:
                     print("No Silence Detected")
                     window['NBar'].update('No Silence Detected')
@@ -857,7 +868,7 @@ while True:
                     Temp = AudioSegment.empty()
                     len(Temp) == 0
 
-                    # --Add each audio segment onto the end of the blank segment
+                    # --Append each audio segment onto the end of the blank segment
                     i = 0
                     while i < partnu:
                         Clip = Short[i]
@@ -871,13 +882,16 @@ while True:
                     window['NBar'].update('Silence Skipping Complete')
                     window.refresh()
 
-            # --Export2
+            # --Export part 2
             if Pages[Page] == '-LOExport':
+                # ---Generating a placeholder file. This is the best way I found of getting python to see what file-
+                # ---extension was chosen by the user
                 if count == 0:
                     export = values['-file2-']
                     placeholder = AudioSegment.empty()
                     placeholder.export(export)
 
+                # ---Reading the placeholder file to see it's file extension
                 formatfinder = os.path.splitext(export)
                 FileExtension = str(formatfinder[1])
                 print("File Extension: ", FileExtension)
@@ -890,6 +904,7 @@ while True:
                 if FileExtension == '.flac':
                     ExportFormat = 'flac'
 
+                # --- Adding a number onto the end of the file name if multiple files are being exported
                 if count > 0:
                     countstr = str(count + 1)
                     extension = countstr + FileExtension
@@ -899,11 +914,15 @@ while True:
                 print("Exporting...")
                 window['NBar'].update('Exporting...')
                 window.refresh()
+
+                # ---Exporting the file
                 ABook.export(export, bitrate='128k', format=ExportFormat)
                 window.refresh()
 
                 count = count + 1
                 print(count)
+
+                # ---Events for after exporting the last file
                 if count == filecount:
                     exporting = 0
                     count = 0
@@ -911,9 +930,11 @@ while True:
                     print('Exporting Complete')
                     window['Restart'].update(visible=True)
 
+            # --- Making the events not loop if the current page isn't export
             if Pages[Page] != '-LOExport':
                 exporting = 0
 
+        # --- Enabling the next button for after effects are applied
         if Pages[Page] != '-LOHome':
             window['-next-'].update(disabled=False)
 
@@ -928,7 +949,7 @@ while True:
         window['undoSS'].update(disabled=False)
         window.refresh()
 
-    # ---Events for Restart Button
+    # ---Events for Restart Button (after file is exported)
     if event == 'Restart':
         Page = 0
         window[Pages[Page]].select()
@@ -942,7 +963,7 @@ while True:
         Pages = ['-LOHome', '-LOProcess']
         window.refresh()
 
-# ---Events for Background Noise Combo Box
+# ---Events for Background Noise Combo Box (Reading Presets)
     if event == 'NRCombo':
         print(values['NRCombo'])
         NRPSNum = NRPSNames.index(values['NRCombo'])
@@ -954,7 +975,7 @@ while True:
         window['VNR'].update(NRSetting)
 
 
-# ---Events for Compression Combo Box
+# ---Events for Compression Combo Box (Reading Presets)
     if event == 'CompCombo':
         print(values['CompCombo'])
         CompPSNum = CompPSNames.index(values['CompCombo'])
@@ -971,7 +992,7 @@ while True:
         window['CompRelease'].update(CompSetting[3])
 
 
-# ---Events for Normalisation Combo Box
+# ---Events for Normalisation Combo Box (Reading Presets)
     if event == 'NormCombo':
         print(values['NormCombo'])
         NormPSNum = NormPSNames.index(values['NormCombo'])
@@ -985,7 +1006,7 @@ while True:
         window['VNorm'].update(NormSetting)
 
 
-# ---Events for Vocal EQ Combo Box
+# ---Events for Vocal EQ Combo Box (Reading Presets)
     if event == 'EQCombo':
         print(values['EQCombo'])
         EQPSNum = EQPSNames.index(values['EQCombo'])
@@ -1007,7 +1028,7 @@ while True:
         window['eq8k'].update(EQSetting[8])
         window['eq16k'].update(EQSetting[9])
 
-# ---Events for Silence Skipping Combo Box
+# ---Events for Silence Skipping Combo Box (Reading Presets)
     if event == 'SSkipCombo':
         print(values['SSkipCombo'])
         SSkipPSNum = SSkipPSNames.index(values['SSkipCombo'])
