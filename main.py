@@ -34,6 +34,56 @@ import PySimpleGUI as sg
 #             ███    ███ ███   ███   ███    ███ ███  ███   ███   ███    ███
 #             ██████████  ▀█   █▀    ████████▀  █▀    ▀█   █▀    ██████████
 
+# ---Presets
+
+# ---Noise Reduction Presets
+# ---[Noise Reduction Amount]
+NRPS0 = 0
+NRPS25 = 25
+NRPS50 = 50
+NRPS75 = 75
+
+NRPSNames = ['0', '25', '50', '75']
+NRPSValues = [NRPS0, NRPS25, NRPS50, NRPS75]
+
+# ---Compression Presets
+# ---[Threshold, Ratio, Attack, Release]
+CompPSDefault = [0, 0, 0, 0]
+CompPSBasic = [-8.4, 16, 2, 800]
+
+CompPSNames = ['Default', 'Basic']
+CompPSValues = [CompPSDefault, CompPSBasic]
+
+# ---Normalisation Presets
+# ---[Target Volume]
+NormPSDefault = 0
+NormPSLouder = 2
+NormPSMuchLouder = 4
+NormPSQuieter = -3
+NormPSMuchQuieter = -6
+
+NormPSNames = ['Default', 'Louder', 'Much Louder', 'Quieter', 'Much Quieter']
+NormPSValues = [NormPSDefault, NormPSLouder, NormPSMuchLouder, NormPSQuieter, NormPSMuchQuieter]
+
+# ---Vocal EQ Presets
+# ---[32Hz, 64Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz, 16kHz]
+EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+EQPSBoomyVoice = [-9, -7, -5, -3, 1, 2, 2, 2, 3, 3]
+
+EQPSNames = ['Default', 'Boomy Voice']
+EQPSValues = [EQPSDefault, EQPSBoomyVoice]
+
+# ---Silence Skipping Presets
+# ---[Minimum Silence, Silence Threshold, Keep Silence, Searching Step]
+SSPSDefault = [1200, -30, 600, 2]
+SSPSNoSilenceDetected = [1200, -40, 600, 2]
+SSPSSkippingTooMuch = [1200, -20, 600, 2]
+SSPSLongerSilence = [2400, -30, 900, 2]
+SSPSShorterSilence = [900, -30, 300, 2]
+
+SSkipPSNames = ['Default', 'No Silence Detected', 'Skipping Too Much', 'Longer Silence', 'Shorter Silence']
+SSkipPSValues = [SSPSDefault, SSPSNoSilenceDetected, SSPSSkippingTooMuch, SSPSLongerSilence, SSPSShorterSilence]
+
 # ---Creating the theme
 sg.LOOK_AND_FEEL_TABLE['ABETheme'] = {'BACKGROUND': '#180D2B',
                                       'TEXT': '#FFF3CC',
@@ -98,7 +148,7 @@ LOProcess = [
 LONR = [
     [sg.Text('Background Noise Reduction', justification='center', font=Header, text_color=HeaderC),
      sg.Text('🛈', key='infoNR', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(('0%', '25%'), default_value='50%', size=(4, 1),
+    [sg.InputCombo(NRPSNames, default_value='50%', size=(4, 1),
                    key='NRCombo',
                    enable_events=True)],
     [sg.Frame('Noise Reduction Amount', [
@@ -109,15 +159,11 @@ LONR = [
      sg.Button('⟲', key='undoNR', enable_events=True, disabled=True)]
 ]
 
-# ---Defining Noise Reduction Settings
-NRPS0 = 0
-NRPS25 = 25
-
 # --- Compression Screen
 LOComp = [
     [sg.Text('Compression', justification='center', font=Header, text_color=HeaderC),
      sg.Text('🛈', key='infoComp', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(('Default', 'Basic'), default_value='Default', size=(20, 1),
+    [sg.InputCombo(CompPSNames, default_value='Default', size=(20, 1),
                    key='CompCombo',
                    enable_events=True)],
     [sg.Frame('Manual Compressor', [
@@ -145,15 +191,11 @@ LOComp = [
     ], element_justification='c')],
 ]
 
-# ---Defining Compression Settings
-CompPSDefault = [0, 0, 0, 0]
-CompPSBasic = [-20, 6, 5, 50]
-
 # --- Normalisation Screen
 LONorm = [
     [sg.Text('Normalisation', justification='center', font=Header, text_color=HeaderC),
      sg.Text('🛈', key='infoNorm', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(('Default', 'Basic'), default_value='Default', size=(20, 1),
+    [sg.InputCombo(NormPSNames, default_value='Default', size=(20, 1),
                    key='NormCombo',
                    enable_events=True)],
     [sg.Frame('Normalisation Target', [
@@ -165,10 +207,6 @@ LONorm = [
     [sg.Button('Apply', key='applyNorm', enable_events=True),
      sg.Button('⟲', key='undoNorm', enable_events=True, disabled=True)]
 ]
-
-# ---Defining Normalisation Settings
-NormPSDefault = 0
-NormPSBasic = -1
 
 # --- Mouth Noise Reduction Screen (Unused so far)
 LOMNR = [
@@ -184,8 +222,8 @@ LOEQ = [
         [sg.Text('Vocal EQ', justification='center', font=Header, text_color=HeaderC),
          sg.Text('🛈', key='infoEQ', font=Header, enable_events=True, text_color=infoc)],
     ], size=(700, 1), border_width=0)],
-    [sg.InputCombo(('Default', 'Weird'), default_value='Default', size=(20, 1),
-                   key='EQcombo',
+    [sg.InputCombo(EQPSNames, default_value='Default', size=(20, 1),
+                   key='EQCombo',
                    enable_events=True)],
     [sg.Frame('', [
         [sg.Frame('32', [
@@ -233,15 +271,11 @@ LOEQ = [
     ], element_justification='c', border_width=0)],
 ]
 
-# ---Defining Vocal EQ Settings
-EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-EQPSWeird = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
-
 # --- Silence Skipping Screen
 LOSSkip = [
     [sg.Text('Silence Skipping', justification='center', font=Header, text_color=HeaderC),
      sg.Text('🛈', key='infoSSkip', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(('Default', 'Basic'), default_value='Default', size=(20, 1),
+    [sg.InputCombo(SSkipPSNames, default_value='Default', size=(20, 1),
                    key='SSkipCombo',
                    enable_events=True)],
 
@@ -267,12 +301,7 @@ LOSSkip = [
     ])]
 ]
 
-# ---Defining Silence Skipping Settings
-SSPSDefault = [0, 0, 0, 1]
-SSPSBasic = [1200, -30, 500, 2]
-
 ExportFormat = ('mp3', '.mp3')
-
 # --- Export Screen
 LOExport = [
     [sg.Text('Export', justification='center', font=Header, text_color=HeaderC),
@@ -819,23 +848,28 @@ while True:
                 print(Short)
                 print(partnu)
 
-                # ---Create Blank Segment
-                Temp = AudioSegment.empty()
-                len(Temp) == 0
+                if partnu == 0:
+                    print("No Silence Detected")
+                    window['NBar'].update('No Silence Detected')
+                    window.refresh()
+                else:
+                    # ---Create Blank Segment
+                    Temp = AudioSegment.empty()
+                    len(Temp) == 0
 
-                # --Add each audio segment onto the end of the blank segment
-                i = 0
-                while i < partnu:
-                    Clip = Short[i]
-                    Temp = Temp.append(Clip, crossfade=0)
-                    # print([i])
-                    # print(clip)
-                    i = i + 1
+                    # --Add each audio segment onto the end of the blank segment
+                    i = 0
+                    while i < partnu:
+                        Clip = Short[i]
+                        Temp = Temp.append(Clip, crossfade=0)
+                        # print([i])
+                        # print(clip)
+                        i = i + 1
 
-                ABook = Temp
+                    ABook = Temp
 
-                window['NBar'].update('Silence Skipping Complete')
-                window.refresh()
+                    window['NBar'].update('Silence Skipping Complete')
+                    window.refresh()
 
             # --Export2
             if Pages[Page] == '-LOExport':
@@ -908,128 +942,89 @@ while True:
         Pages = ['-LOHome', '-LOProcess']
         window.refresh()
 
-
-    # ---Events for Compression Screen
-    if event == 'CompThreshold' or 'CompRatio' or 'CompAttack' or 'CompRelease':
-        window['CompCombo'].update('Custom')
-
-    if event == 'CompCombo':
-        if values['CompCombo'] == 'Default':
-            compname = 'Default'
-            compsetting = CompPSDefault
-
-        if values['CompCombo'] == 'Basic':
-            compname = 'Basic'
-            compsetting = CompPSBasic
-
-        window['CompThreshold'].update(compsetting[0])
-        window['CompRatio'].update(compsetting[1])
-        window['CompAttack'].update(compsetting[2])
-        window['CompRelease'].update(compsetting[3])
-
-        print(compname)
-        window['CompCombo'].update(compname)
-
-    # ---Events for Normalisation Screen
-    if event == 'VNorm':
-        window['NormCombo'].update('Custom')
-
-    if event == 'NormCombo':
-        if values['NormCombo'] == 'Default':
-            normname = 'Default'
-            normsetting = NormPSDefault
-
-        if values['NormCombo'] == 'Basic':
-            normname = 'Basic'
-            normsetting = NormPSBasic
-
-        window['VNorm'].update(normsetting)
-
-        print(normname)
-        window['NormCombo'].update(normname)
-
-    # ---Events for Background Noise Reduction Screen
-    if event == 'VNR':
-        window['NRCombo'].update(values['VNR'], '%')
-
+# ---Events for Background Noise Combo Box
     if event == 'NRCombo':
-        if values['NRCombo'] == '0%':
-            nrname = '0%'
-            nrsetting = NRPS0
+        print(values['NRCombo'])
+        NRPSNum = NRPSNames.index(values['NRCombo'])
+        print(NRPSNum)
 
-        if values['NRCombo'] == '25%':
-            nrname = '25%'
-            nrsetting = NRPS25
+        print(NRPSValues[NRPSNum])
+        NRSetting = NRPSValues[NRPSNum]
 
-        window['VNR'].update(nrsetting)
+        window['VNR'].update(NRSetting)
 
-        print(nrname)
-        window['NRCombo'].update(nrname)
 
-    # ---Events for Mouth Noise Reduction Screen
+# ---Events for Compression Combo Box
+    if event == 'CompCombo':
+        print(values['CompCombo'])
+        CompPSNum = CompPSNames.index(values['CompCombo'])
+        print(CompPSNum)
 
-    # ---Events for Vocal EQ Screen
-    # ---EQ Sliders
-    if event == 'eq32' or 'eq64' or 'eq125' or 'eq250' or 'eq500' or 'eq1k' or 'eq2k' or 'eq4k' or 'eq8k' or 'eq16k':
-        window['EQcombo'].update('Custom')
+        print(CompPSValues[CompPSNum])
+        CompSetting = CompPSValues[CompPSNum]
 
-    # ---Combo Box
-    if event == 'EQcombo':
-        if values['EQcombo'] == 'Default':
-            eqname = 'Default'
-            eqsetting = EQPSDefault
+        print('Comp Setting :', CompSetting)
 
-        if values['EQcombo'] == 'Weird':
-            eqname = 'Weird'
-            eqsetting = EQPSWeird
+        window['CompThreshold'].update(CompSetting[0])
+        window['CompRatio'].update(CompSetting[1])
+        window['CompAttack'].update(CompSetting[2])
+        window['CompRelease'].update(CompSetting[3])
 
-        window['eq32'].update(eqsetting[0])
-        window['eq64'].update(eqsetting[1])
-        window['eq125'].update(eqsetting[2])
-        window['eq250'].update(eqsetting[3])
-        window['eq500'].update(eqsetting[4])
-        window['eq1k'].update(eqsetting[5])
-        window['eq2k'].update(eqsetting[6])
-        window['eq4k'].update(eqsetting[7])
-        window['eq8k'].update(eqsetting[8])
-        window['eq16k'].update(eqsetting[9])
 
-        print(eqname)
-        window['EQcombo'].update(eqname)
+# ---Events for Normalisation Combo Box
+    if event == 'NormCombo':
+        print(values['NormCombo'])
+        NormPSNum = NormPSNames.index(values['NormCombo'])
+        print(NormPSNum)
 
-    # --- Input Boxes
-    # if event == 'ieq32':
-    #     if values['ieq32'] == '2':
-    #         eqvalue = 0
-    #     else:
-    #         eqvalue = int(values['ieq32'])
-    #         if eqvalue < -15:
-    #             eqvalue = -15
-    #         if eqvalue > 15:
-    #             eqvalue = 15
-    #     window['eq32'].update(eqvalue)
-    #     window['ieq32'].update(eqvalue)
+        print(NormPSValues[NormPSNum])
+        NormSetting = NormPSValues[NormPSNum]
 
-    # ---Events for Silence Skipping Screen
+        print('Norm Setting :', NormSetting)
+
+        window['VNorm'].update(NormSetting)
+
+
+# ---Events for Vocal EQ Combo Box
+    if event == 'EQCombo':
+        print(values['EQCombo'])
+        EQPSNum = EQPSNames.index(values['EQCombo'])
+        print(EQPSNum)
+
+        print(EQPSValues[EQPSNum])
+        EQSetting = EQPSValues[EQPSNum]
+
+        print('eq setting :', EQSetting)
+
+        window['eq32'].update(EQSetting[0])
+        window['eq64'].update(EQSetting[1])
+        window['eq125'].update(EQSetting[2])
+        window['eq250'].update(EQSetting[3])
+        window['eq500'].update(EQSetting[4])
+        window['eq1k'].update(EQSetting[5])
+        window['eq2k'].update(EQSetting[6])
+        window['eq4k'].update(EQSetting[7])
+        window['eq8k'].update(EQSetting[8])
+        window['eq16k'].update(EQSetting[9])
+
+# ---Events for Silence Skipping Combo Box
     if event == 'SSkipCombo':
-        if values['SSkipCombo'] == 'Default':
-            ssname = 'Default'
-            sssetting = SSPSDefault
+        print(values['SSkipCombo'])
+        SSkipPSNum = SSkipPSNames.index(values['SSkipCombo'])
+        print(SSkipPSNum)
 
-        if values['SSkipCombo'] == 'Basic':
-            ssname = 'Basic'
-            sssetting = SSPSBasic
+        print(SSkipPSValues[SSkipPSNum])
+        SSkipSetting = SSkipPSValues[SSkipPSNum]
 
-        window['SSMin'].update(sssetting[0])
-        window['SSThresh'].update(sssetting[1])
-        window['SSKeep'].update(sssetting[2])
-        window['SSStep'].update(sssetting[3])
+        print('SSkip setting :', SSkipSetting)
 
-        print(ssname)
-        window['SSkipCombo'].update(ssname)
+        window['SSMin'].update(SSkipSetting[0])
+        window['SSThresh'].update(SSkipSetting[1])
+        window['SSKeep'].update(SSkipSetting[2])
+        window['SSStep'].update(SSkipSetting[3])
 
 
-    # ---The Info Buttons
+# ---The Info Buttons
     # ---Info Buttons for Presets Page
     if event == 'infoPrNR':
         window['info'].update('The Background Noise Reducer gets rid of any hiss, buzz,'
