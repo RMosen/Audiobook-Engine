@@ -64,7 +64,7 @@ As well as several quality of life improvements such as:
 	<li>Helpful Info Boxes</li>
 </ul></div>
 
-<h1 id="Prerequisites">Prerequisites:</h1>
+<h1 id="Prerequisites">Prerequisites</h1>
 <div><ul>
 	<li><a href="https://github.com/jiaaro/pydub">PyDub</a></li>
 		Pydub is the backbone of this software. It handles importing/exporting audio as well as the compressor, normalisation,
@@ -80,7 +80,7 @@ As well as several quality of life improvements such as:
 		PySimpleGui handles the GUI for Audiobook Engine.
 </ul></div>
 
-<h1 id="Processes">Processes:</h1>
+<h1 id="Processes">Processes</h1>
 
 You can hear samples of all of these processes in action <a href='https://richardmosen.com/audiobookenginesamples'>here.</a>
 
