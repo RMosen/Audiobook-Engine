@@ -4,6 +4,8 @@
 
 Audiobook Engine is a piece of software designed to make the restoration of audiobooks simple and achievable for everyone.
 
+Hear samples of Audiobook Engine in action <a href='https://richardmosen.com/audiobookenginesamples'>here.</a>
+
 <h3>Table of Contents</h3>
 <div><ul>
 	<li><a href="#Background">Background</a></li>
@@ -21,6 +23,13 @@ Audiobook Engine is a piece of software designed to make the restoration of audi
 	<li><a href="#Licence">Licence</a></li>
 	<li><a href="#Sources">Sources</a></li>
 </ul></div>
+
+<audio controls>
+  <source src="https://github.com/RMosen/Audiobook-Engine/blob/main/Sample%20Audiobooks/DarkTowerSSkip.mp3" type="audio/mpeg">
+  <!-- fallback for non supporting browsers goes here -->
+  <p>Your browser does not support HTML5 audio, but you can still
+     <a href="https://github.com/RMosen/Audiobook-Engine/blob/main/Sample%20Audiobooks/DarkTowerSSkip.mp3">download the music</a>.</p>
+</audio>
 
 <h1 id="Background">Background</h1>
 
@@ -72,6 +81,9 @@ As well as several quality of life improvements such as:
 </ul></div>
 
 <h1 id="Processes">Processes:</h1>
+
+You can hear samples of all of these processes in action <a href='https://richardmosen.com/audiobookenginesamples'>here.</a>
+
 <h3 id="BackgroundNoiseReduction">Background Noise Reduction</h3>
 <img src="https://user-images.githubusercontent.com/56782487/138979962-dba3ca2c-3bc7-4bee-a8fd-26ee294de81c.png" width="60%">
 Background Noise Reduction scans the audiobook for periods of “silence” and analyses the background noise. It then equalizes the whole audiobook to reduce the background noise. Although it is possible to completely remove the background noise with this tool, a total reduction can leave the dialogue sounding quite bad. But, a more subtle use of the Background Noise Reduction along with Silence Skipping can go a long way to reduce the effects of the background noise. I'd say that for most audiobooks ripped from cassettes, this is the most important feature.
