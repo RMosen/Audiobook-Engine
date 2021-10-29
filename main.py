@@ -49,10 +49,31 @@ NRPSValues = [NRPS0, NRPS25, NRPS50, NRPS75]
 # ---Compression Presets
 # ---[Threshold, Ratio, Attack, Release]
 CompPSDefault = [0, 0, 0, 0]
-CompPSBasic = [-8.4, 16, 2, 800]
+CompPSBasic = [-22, 5, 10, 49]
+CompPSShouty = [-22, 4, 22, 67]
+CompPSSoft = [-21, 12, 3, 49]
+CompPSDynamic = [-24, 3, 5, 20]
+CompPSTransients = [-24, 2, 10, 40]
 
-CompPSNames = ['Default', 'Basic']
-CompPSValues = [CompPSDefault, CompPSBasic]
+CompPSNames = ['Default', 'Basic', 'Shouty Voice', 'Soft Voice', 'Highly Dynamic', 'Rough Transients']
+CompPSValues = [CompPSDefault, CompPSBasic, CompPSShouty, CompPSSoft, CompPSDynamic, CompPSTransients]
+
+# ---Vocal EQ Presets
+# ---[32Hz, 64Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz, 16kHz]
+EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+EQPSBassBoost = [5, 4, 3, 2, 1, 0, 0, 0, 0, 0]
+EQPSBassReduce = [-6, -5, -4, -3, -2, 0, 0, 0, 0, 0]
+EQPSVocalBoost = [-4, -1, 0, 0, 3, 4, 5, 4, 2, -1]
+EQPSTrebleBoost = [0, 0, 0, 0, 0, 1, 2, 3, 4, 5]
+EQPSTrebleReduce = [0, 0, 0, 0, 0, -2, -3, -4, -5, -6]
+EQPSFemaleVoice = [-10, -6, -3, -0, 3, -3, 2, 2, 0, 0]
+EQPSMaleVoice = [-13, -10, -7, -1, 0, 2, 0, 3, 0, 0]
+EQPSBoomyVoice = [-9, -7, -5, -3, 1, 2, 2, 2, 3, 3]
+
+EQPSNames = ['Default', 'Bass Boost', 'Bass Reduce', 'Vocal Boost', 'Treble Boost', 'Treble Reduce',
+             'Female Voice', 'Male Voice', 'Boomy Voice']
+EQPSValues = [EQPSDefault, EQPSBassBoost, EQPSBassReduce, EQPSVocalBoost, EQPSTrebleBoost, EQPSTrebleReduce,
+              EQPSFemaleVoice, EQPSMaleVoice, EQPSBoomyVoice]
 
 # ---Normalisation Presets
 # ---[Target Volume]
@@ -64,14 +85,6 @@ NormPSMuchQuieter = -6
 
 NormPSNames = ['Default', 'Louder', 'Much Louder', 'Quieter', 'Much Quieter']
 NormPSValues = [NormPSDefault, NormPSLouder, NormPSMuchLouder, NormPSQuieter, NormPSMuchQuieter]
-
-# ---Vocal EQ Presets
-# ---[32Hz, 64Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz, 16kHz]
-EQPSDefault = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-EQPSBoomyVoice = [-9, -7, -5, -3, 1, 2, 2, 2, 3, 3]
-
-EQPSNames = ['Default', 'Boomy Voice']
-EQPSValues = [EQPSDefault, EQPSBoomyVoice]
 
 # ---Silence Skipping Presets
 # ---[Minimum Silence, Silence Threshold, Keep Silence, Searching Step]
@@ -103,10 +116,11 @@ Header = ("Century Schoolbook Bold", 25)
 HeaderC = '#F3CC49'
 HeaderBG = '#2F1042'
 
-# --- Main Fonts
-Font = ('Helvetica', 11)
+# --- Main Font
+Font = ('Calibri', 11)
 
 # --- Info Button Fonts
+infof = ('Calibri', 11)
 infoc = '#F77959'
 
 # --- Creating the different pages in the program
@@ -117,7 +131,7 @@ LOHome = [
     [sg.InputText(key='applyHome',
                   default_text='',
                   disabled=True, enable_events=True, font=Font),
-     sg.FilesBrowse(file_types=(("Audio Files", "*.wav *.mp3 *.flac"), ("All Files", "*")), key='HomeFB'),
+     sg.FilesBrowse(file_types=(("Audio Files", "*.wav *.mp3 *.flac"), ("All Files", "*")), key='HomeFB', font=Font),
      ]
 ]
 
@@ -125,166 +139,170 @@ LOHome = [
 LOProcess = [
     [sg.Text('Choose Processes', justification='center', font=Header, text_color=HeaderC)],
     [sg.Frame('', [
-        [sg.Text('🛈', key='infoPrNR', enable_events=True, text_color=infoc),
-         sg.Checkbox('Background Noise Reduction', default=False, key="-NR-")],
-        [sg.Text('🛈', key='infoPrComp', enable_events=True, text_color=infoc),
-         sg.Checkbox('Compression', default=False, key="-Comp-")],
-        [sg.Text('🛈', key='infoPrNorm', enable_events=True, text_color=infoc),
-         sg.Checkbox('Normalisation', default=False, key="-Norm-")],
-        [sg.Text('🛈', key='infoPrEQ', enable_events=True, text_color=infoc),
-         sg.Checkbox('Vocal EQ', default=False, key="-EQ-")],
-        [sg.Text('🛈', key='infoPrSSkip', enable_events=True, text_color=infoc),
-         sg.Checkbox('Silence Skipping', default=False, key="-SSkip-")],
+        [sg.Text('ⓘ', key='infoPrNR', enable_events=True, text_color=infoc, font=infof),
+         sg.Checkbox('Background Noise Reduction', default=False, key="-NR-", font=Font)],
+        [sg.Text('ⓘ', key='infoPrComp', enable_events=True, text_color=infoc, font=infof),
+         sg.Checkbox('Compression', default=False, key="-Comp-", font=Font)],
+        [sg.Text('ⓘ', key='infoPrEQ', enable_events=True, text_color=infoc, font=infof),
+         sg.Checkbox('Vocal EQ', default=False, key="-EQ-", font=Font)],
+        [sg.Text('ⓘ', key='infoPrNorm', enable_events=True, text_color=infoc, font=infof),
+         sg.Checkbox('Normalisation', default=False, key="-Norm-", font=Font)],
+        [sg.Text('ⓘ', key='infoPrSSkip', enable_events=True, text_color=infoc, font=infof),
+         sg.Checkbox('Silence Skipping', default=False, key="-SSkip-", font=Font)],
     ], element_justification='Left', relief=sg.RELIEF_FLAT)]
 ]
 
 # --- Background Noise Reduction Screen
 LONR = [
     [sg.Text('Background Noise Reduction', justification='center', font=Header, text_color=HeaderC),
-     sg.Text('🛈', key='infoNR', font=Header, enable_events=True, text_color=infoc)],
+     sg.Text('ⓘ', key='infoNR', font=Header, enable_events=True, text_color=infoc)],
     [sg.InputCombo(NRPSNames, default_value='50%', size=(4, 1),
                    key='NRCombo',
-                   enable_events=True)],
+                   enable_events=True, font=Font)],
     [sg.Frame('Noise Reduction Amount', [
-        [sg.InputText(key="VNR", size=(4, 1), default_text='50', pad=(0, 30)), sg.Text('%')]
+        [sg.InputText(key="VNR", size=(4, 1), default_text='50', pad=(0, 30), font=Font), sg.Text('%', font=Font)]
     ], element_justification='c')],
 
-    [sg.Button('Apply', key='applyNR', enable_events=True),
-     sg.Button('⟲', key='undoNR', enable_events=True, disabled=True)]
+    [sg.Button('Apply', key='applyNR', enable_events=True, font=Font),
+     sg.Button('⟲', key='undoNR', enable_events=True, disabled=True, font=Font)]
 ]
 
 # --- Compression Screen
 LOComp = [
     [sg.Text('Compression', justification='center', font=Header, text_color=HeaderC),
-     sg.Text('🛈', key='infoComp', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(CompPSNames, default_value='Default', size=(20, 1),
-                   key='CompCombo',
-                   enable_events=True)],
+     sg.Text('ⓘ', key='infoComp', font=Header, enable_events=True, text_color=infoc)],
+    [sg.InputCombo(CompPSNames, default_value='Default', size=(20, 1), key='CompCombo', enable_events=True, font=Font),
+     sg.Text('ⓘ', key='infoCompCombo', enable_events=True, text_color=infoc, font=infof)],
     [sg.Frame('Manual Compressor', [
-        [sg.Text('🛈', key='infoCompThresh', enable_events=True, text_color=infoc),
-         sg.Text('Threshold:', size=(8, 1)),
-         sg.InputText(key="CompThreshold", size=(4, 1), default_text='0', enable_events=True),
-         sg.Text('dB', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoCompThresh', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Threshold:', size=(8, 1), font=Font),
+         sg.InputText(key="CompThreshold", size=(4, 1), default_text='0', enable_events=True, font=Font),
+         sg.Text('dB', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoCompRatio', enable_events=True, text_color=infoc),
-         sg.Text('Ratio:', size=(8, 1)),
-         sg.InputText(key="CompRatio", size=(4, 1), default_text='1', enable_events=True), sg.Text(':1', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoCompRatio', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Ratio:', size=(8, 1), font=Font),
+         sg.InputText(key="CompRatio", size=(4, 1), default_text='1', enable_events=True, font=Font),
+         sg.Text(':1', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoCompAttack', enable_events=True, text_color=infoc),
-         sg.Text('Attack:', size=(8, 1)),
-         sg.InputText(key="CompAttack", size=(4, 1), default_text='3', enable_events=True), sg.Text('ms', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoCompAttack', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Attack:', size=(8, 1), font=Font),
+         sg.InputText(key="CompAttack", size=(4, 1), default_text='3', enable_events=True, font=Font),
+         sg.Text('ms', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoCompRelease', enable_events=True, text_color=infoc),
-         sg.Text('Release:', size=(8, 1)),
-         sg.InputText(key="CompRelease", size=(4, 1), default_text='100', enable_events=True),
-         sg.Text('ms', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoCompRelease', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Release:', size=(8, 1), font=Font),
+         sg.InputText(key="CompRelease", size=(4, 1), default_text='100', enable_events=True, font=Font),
+         sg.Text('ms', size=(3, 1), font=Font)],
 
-        [sg.Button('Apply', key='applyComp', enable_events=True),
-         sg.Button('⟲', key='undoComp', enable_events=True, disabled=True)]
+        [sg.Button('Apply', key='applyComp', enable_events=True, font=Font),
+         sg.Button('⟲', key='undoComp', enable_events=True, disabled=True, font=Font)]
 
     ], element_justification='c')],
 ]
-
-# --- Normalisation Screen
-LONorm = [
-    [sg.Text('Normalisation', justification='center', font=Header, text_color=HeaderC),
-     sg.Text('🛈', key='infoNorm', font=Header, enable_events=True, text_color=infoc)],
-    [sg.InputCombo(NormPSNames, default_value='Default', size=(20, 1),
-                   key='NormCombo',
-                   enable_events=True)],
-    [sg.Frame('Normalisation Target', [
-        # [sg.Text('Headroom:', size=(8, 1)), sg.InputText(key="VNorm", size=(4, 1), default_text='0')]
-        [sg.Slider(range=(-20, 5), default_value=0, orientation='h', key='VNorm',
-                   enable_events=True, pad=20, resolution=0.5, )]
-    ])],
-
-    [sg.Button('Apply', key='applyNorm', enable_events=True),
-     sg.Button('⟲', key='undoNorm', enable_events=True, disabled=True)]
-]
-
 
 # --- Vocal EQ Screen
 LOEQ = [
     [sg.Frame('', [
         [sg.Text('Vocal EQ', justification='center', font=Header, text_color=HeaderC),
-         sg.Text('🛈', key='infoEQ', font=Header, enable_events=True, text_color=infoc)],
+         sg.Text('ⓘ', key='infoEQ', font=Header, enable_events=True, text_color=infoc)],
     ], size=(700, 1), border_width=0)],
     [sg.InputCombo(EQPSNames, default_value='Default', size=(20, 1),
                    key='EQCombo',
-                   enable_events=True)],
+                   enable_events=True, font=Font)],
     [sg.Frame('', [
         [sg.Frame('32', [
-            [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq32', enable_events=True)],
+            [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq32', enable_events=True, font=Font)],
             # [sg.InputText('0', size=(3, 1), key='ieq32', enable_events=True)]
         ]),
          sg.Frame('64', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq64', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq64', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq64', enable_events=True)]
          ]),
          sg.Frame('125', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq125', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq125', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq125', enable_events=True)]
          ]),
          sg.Frame('250', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq250', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq250', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq250', enable_events=True)]
          ]),
          sg.Frame('500', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq500', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq500', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq500', enable_events=True)]
          ]),
          sg.Frame('1k', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq1k', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq1k', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq1k', enable_events=True)]
          ]),
          sg.Frame('2k', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq2k', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq2k', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq2k', enable_events=True)]
          ]),
          sg.Frame('4k', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq4k', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq4k', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq4k', enable_events=True)]
          ]),
          sg.Frame('8k', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq8k', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq8k', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq8k', enable_events=True)]
          ]),
          sg.Frame('16k', [
-             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq16k', enable_events=True)],
+             [sg.Slider(range=(-15, 15), default_value=0, orientation='vertical', key='eq16k', enable_events=True, font=Font)],
              # [sg.InputText(size=(3, 1), key='ieq16k', enable_events=True,)]
          ])],
-        [sg.Button('Apply', key='applyEQ', enable_events=True),
-         sg.Button('⟲', key='undoEQ', enable_events=True, disabled=True)]
+        [sg.Button('Apply', key='applyEQ', enable_events=True, font=Font),
+         sg.Button('⟲', key='undoEQ', enable_events=True, disabled=True, font=Font)]
     ], element_justification='c', border_width=0)],
+]
+
+# --- Normalisation Screen
+LONorm = [
+    [sg.Text('Normalisation', justification='center', font=Header, text_color=HeaderC),
+     sg.Text('ⓘ', key='infoNorm', font=Header, enable_events=True, text_color=infoc)],
+    [sg.InputCombo(NormPSNames, default_value='Default', size=(20, 1),
+                   key='NormCombo',
+                   enable_events=True, font=Font)],
+    [sg.Frame('Normalisation Target', [
+        # [sg.Text('Headroom:', size=(8, 1)), sg.InputText(key="VNorm", size=(4, 1), default_text='0')]
+        [sg.Slider(range=(-20, 5), default_value=0, orientation='h', key='VNorm',
+                   enable_events=True, pad=20, resolution=0.5, font=Font)]
+    ])],
+
+    [sg.Button('Apply', key='applyNorm', enable_events=True, font=Font),
+     sg.Button('⟲', key='undoNorm', enable_events=True, disabled=True, font=Font)]
 ]
 
 # --- Silence Skipping Screen
 LOSSkip = [
     [sg.Text('Silence Skipping', justification='center', font=Header, text_color=HeaderC),
-     sg.Text('🛈', key='infoSSkip', font=Header, enable_events=True, text_color=infoc)],
+     sg.Text('ⓘ', key='infoSSkip', font=Header, enable_events=True, text_color=infoc)],
     [sg.InputCombo(SSkipPSNames, default_value='Default', size=(20, 1),
                    key='SSkipCombo',
-                   enable_events=True)],
+                   enable_events=True, font=Font)],
 
     [sg.Frame('Silence Skipping', [
-        [sg.Text('🛈', key='infoSSkipMin', enable_events=True, text_color=infoc),
-         sg.Text('Minimum Silence:', size=(14, 1)), sg.InputText(key="SSMin", size=(5, 1), default_text='1200'),
-         sg.Text('ms', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoSSkipMin', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Minimum Silence:', size=(14, 1), font=Font),
+         sg.InputText(key="SSMin", size=(5, 1), default_text='1200', font=Font),
+         sg.Text('ms', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoSSkipThresh', enable_events=True, text_color=infoc),
-         sg.Text('Silence Threshold:', size=(14, 1)), sg.InputText(key="SSThresh", size=(5, 1), default_text='-30'),
-         sg.Text('dB', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoSSkipThresh', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Silence Threshold:', size=(14, 1), font=Font),
+         sg.InputText(key="SSThresh", size=(5, 1), default_text='-30', font=Font),
+         sg.Text('dB', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoSSkipKeep', enable_events=True, text_color=infoc),
-         sg.Text('Keep Silence:', size=(14, 1)), sg.InputText(key="SSKeep", size=(5, 1), default_text='500'),
-         sg.Text('ms', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoSSkipKeep', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Keep Silence:', size=(14, 1), font=Font),
+         sg.InputText(key="SSKeep", size=(5, 1), default_text='500', font=Font),
+         sg.Text('ms', size=(3, 1), font=Font)],
 
-        [sg.Text('🛈', key='infoSSkipStep', enable_events=True, text_color=infoc),
-         sg.Text('Searching Step:', size=(14, 1)), sg.InputText(key="SSStep", size=(5, 1), default_text='1'),
-         sg.Text('ms', size=(3, 1))],
+        [sg.Text('ⓘ', key='infoSSkipStep', enable_events=True, text_color=infoc, font=infof),
+         sg.Text('Searching Step:', size=(14, 1), font=Font),
+         sg.InputText(key="SSStep", size=(5, 1), default_text='1', font=Font),
+         sg.Text('ms', size=(3, 1), font=Font)],
 
-        [sg.Button('Apply', key='applySS', enable_events=True),
-         sg.Button('⟲', key='undoSS', enable_events=True, disabled=True)]
+        [sg.Button('Apply', key='applySS', enable_events=True, font=Font),
+         sg.Button('⟲', key='undoSS', enable_events=True, disabled=True, font=Font)]
     ])]
 ]
 
@@ -293,53 +311,59 @@ ExportFormat = ('mp3', '.mp3')
 # --- Export Screen
 LOExport = [
     [sg.Text('Export', justification='center', font=Header, text_color=HeaderC),
-     sg.Text('🛈', key='infoExport', font=Header, enable_events=True, text_color=infoc)],
+     sg.Text('ⓘ', key='infoExport', font=Header, enable_events=True, text_color=infoc)],
 
-    [sg.Text('Export Folder', justification='center')],
-    [sg.InputText(key='-file2-', default_text=''),
-     sg.FileSaveAs(file_types=(('Wav', '*.wav'), ('MP3', '*.mp3'), ('Flac', '*.flac')), key='ExportSA')],
-    [sg.Button('Export', key='applyExport')],
-    [sg.Button('Restart', key='Restart', visible=False)]
+    [sg.Text('Export Folder', justification='center', font=Font)],
+    [sg.InputText(key='-file2-', default_text='', font=Font),
+     sg.FileSaveAs(file_types=(('Wav', '*.wav'), ('MP3', '*.mp3'), ('Flac', '*.flac')), key='ExportSA', font=Font)],
+    [sg.Button('Export', key='applyExport', font=Font)],
+    [sg.Button('Restart', key='Restart', visible=False, font=Font)]
 ]
-
 
 # --- Info Box
 LOInfo = [
-    [sg.Text('Info')],
+    [sg.Text('Info', font=Font)],
     [sg.Frame('', [
         [sg.Text(" ", key='info', size=(15, 19),
-                 background_color=HeaderBG, font=('Helvetica', 9))]
+                 background_color=HeaderBG, font=Font)]
     ], background_color=HeaderBG)]
 ]
 
-
 # --- Audio Player1 (For Screens without audio editing capabilities)
 LOPlay1 = [
-    [sg.Frame('', [[sg.Text('Play/Stop', background_color=HeaderBG),
-                    sg.Button('▶', key='play', disabled=True, size=(4, 2)),
-                    sg.Button('⯀', key='stop', disabled=True, size=(4, 2))]
-                   ], background_color=HeaderBG, border_width=0, element_justification='c', font=('Courier New', 300),
-              pad=(0, 20))]
+    [sg.Frame('', [[sg.Text('Play/Stop', background_color=HeaderBG, font=Font),
+                    sg.Button('▶', key='play', disabled=True, size=(4, 2), font=Font),
+                    sg.Button('⯀', key='stop', disabled=True, size=(4, 2), font=Font)]
+                   ], background_color=HeaderBG, border_width=0, element_justification='c',
+              pad=(0, 40))]
 ]
 
 # --- Audio Player2 (For Screens with audio editing capabilities)
 LOPlay2 = [
-    [sg.Frame('', [[sg.Frame('', [[sg.Text('Original', background_color=HeaderBG, size=(6, 1)),
-                                   sg.Button('▶', key='play2', disabled=True, size=(2, 1))],
+    [sg.Frame('', [[sg.Frame('', [[sg.Text('ⓘ', key='infoPlayOriginal', enable_events=True, text_color=infoc,
+                                           background_color=HeaderBG, font=infof),
+                                   sg.Text('Original', background_color=HeaderBG, size=(7, 1), font=Font),
+                                   sg.Button('▶', key='play2', disabled=True, size=(2, 1), font=Font)],
 
-                                  [sg.Text('Modified', background_color=HeaderBG, size=(6, 1)),
-                                   sg.Button('▶', key='play3', disabled=True, size=(2, 1))]
+                                  [sg.Text('ⓘ', key='infoPlayModified', enable_events=True, text_color=infoc,
+                                           background_color=HeaderBG, font=infof),
+                                   sg.Text('Modified', background_color=HeaderBG, size=(7, 1), font=Font),
+                                   sg.Button('▶', key='play3', disabled=True, size=(2, 1), font=Font)]
                                   ], border_width=0, background_color=HeaderBG),
-                    sg.Frame('', [[sg.Button('⯀', key='stop2', disabled=True, size=(4, 2))]
-                                  ], border_width=0, background_color=HeaderBG)]
+                    sg.Frame('', [[sg.Button('⯀', key='stop2', disabled=True, size=(4, 2), font=Font)]
+                                  ], border_width=0, background_color=HeaderBG)],
+                   [sg.Text('ⓘ', key='infoPlayVol', enable_events=True, text_color=infoc,
+                            background_color=HeaderBG, font=infof),
+                    sg.Slider(range=(-25, 25), default_value=0, orientation='h', key='PlayVol',
+                              enable_events=True, pad=5, resolution=1, font=Font)]
                    ], background_color=HeaderBG, border_width=0)
      ]
 ]
 
 # --- Next and Skip buttons
 LONext = [
-    [sg.Button('Skip', key='-skip-', enable_events=True, disabled=False, size=(8, 2), visible=False)],
-    [sg.Button('Next', key='-next-', enable_events=True, disabled=True, size=(8, 2))]
+    [sg.Button('Skip', key='-skip-', enable_events=True, disabled=False, size=(8, 2), visible=False, font=Font)],
+    [sg.Button('Next', key='-next-', enable_events=True, disabled=True, size=(8, 2), font=Font)]
 ]
 
 # --- A spacer to help get the layout right
@@ -353,15 +377,15 @@ layout = [
         [sg.Frame('', [
             # --- The Main window. Includes everything apart from the player, the next/skip button, and the info box
             [sg.TabGroup([
-                [sg.Tab('Home', LOHome, visible=False, disabled=True, key='-LOHome', element_justification='c'),
+                [sg.Tab('Home', LOHome, visible=False, disabled=True, key='-LOHome', element_justification='c', font=Font),
                  sg.Tab('Processes', LOProcess, visible=False, disabled=True, key='-LOProcess',
-                        element_justification='c'),
-                 sg.Tab('NR', LONR, visible=False, disabled=True, key='-LONR', element_justification='c'),
-                 sg.Tab('Comp', LOComp, visible=False, disabled=True, key='-LOComp', element_justification='c'),
-                 sg.Tab('Norm', LONorm, visible=False, disabled=True, key='-LONorm', element_justification='c'),
-                 sg.Tab('EQ', LOEQ, visible=False, disabled=True, key='-LOEQ', element_justification='c'),
-                 sg.Tab('SSkip', LOSSkip, visible=False, disabled=True, key='-LOSSkip', element_justification='c'),
-                 sg.Tab('Export', LOExport, visible=False, disabled=True, key='-LOExport', element_justification='c'),
+                        element_justification='c', font=Font),
+                 sg.Tab('NR', LONR, visible=False, disabled=True, key='-LONR', element_justification='c', font=Font),
+                 sg.Tab('Comp', LOComp, visible=False, disabled=True, key='-LOComp', element_justification='c', font=Font),
+                 sg.Tab('EQ', LOEQ, visible=False, disabled=True, key='-LOEQ', element_justification='c', font=Font),
+                 sg.Tab('Norm', LONorm, visible=False, disabled=True, key='-LONorm', element_justification='c', font=Font),
+                 sg.Tab('SSkip', LOSSkip, visible=False, disabled=True, key='-LOSSkip', element_justification='c', font=Font),
+                 sg.Tab('Export', LOExport, visible=False, disabled=True, key='-LOExport', element_justification='c', font=Font),
                  ]],
                 selected_background_color='#180D2B',
                 size=(700, 350),
@@ -369,19 +393,19 @@ layout = [
                 expand_y=True,
                 border_width=2,
                 tab_location='topleft',
-                key='MainFrame',
+                key='MainFrame'
             )],
 
             # ---The two notification bars that appear just above Next/Skip
-            [sg.Text('', key='ExportBar', justification='c', visible=False)],
-            [sg.Text('', key='NBar', justification='c', visible=True)],
+            [sg.Text('', key='ExportBar', justification='c', visible=False, font=Font)],
+            [sg.Text('', key='NBar', justification='c', visible=True, font=Font)],
 
             # ---The Audio Player
             [sg.TabGroup([
                 [sg.Tab('Player', LOPlay1, visible=True, disabled=False, key='-LOPlay1', element_justification='c',
-                        background_color=HeaderBG),
+                        background_color=HeaderBG, font=Font),
                  sg.Tab('Player', LOPlay2, visible=False, disabled=True, key='-LOPlay2', element_justification='c',
-                        background_color=HeaderBG)
+                        background_color=HeaderBG, font=Font)
                  ]],
                 tab_location='topleft',
                 selected_background_color=HeaderBG,
@@ -395,7 +419,7 @@ layout = [
             ]
         ], element_justification='c', border_width=0),
 
-        # --- The Info Box
+         # --- The Info Box
          sg.Column(LOInfo, visible=False, key='-LOInfo', element_justification='c')]
     ], background_color='#180D2B', border_width=10, relief=sg.RELIEF_FLAT, pad=20, element_justification='c')]
 ]
@@ -412,13 +436,14 @@ window = sg.Window('Audiobook Engine',
                    grab_anywhere=False,
                    titlebar_background_color='#2F1042',
                    titlebar_text_color='#ffffff',
-                   titlebar_font=('Helvetica', 11),
+                   titlebar_font=Font,
                    margins=(12, 12),
                    element_padding=5,
                    element_justification='Center',
                    font=('Arial Nova', 11),
                    background_color='#F77959',
                    titlebar_icon='',
+                   icon='files/ABEIcon.ico',
                    resizable=False,
                    )
 
@@ -434,6 +459,9 @@ while True:
 
     # print(event)
 
+    if event == 'PlayVol':
+        sa.stop_all()
+
     # ---Events for the play button
     if event in ['play', 'play3']:
         print('Play')
@@ -441,7 +469,8 @@ while True:
         window['stop'].update(disabled=False)
         window['stop2'].update(disabled=False)
         window.refresh()
-        playback._play_with_simpleaudio(ABook)
+        PlayAudio = ABook + (values['PlayVol'])
+        playback._play_with_simpleaudio(PlayAudio)
 
     # ---Events for play original button
     if event == 'play2':
@@ -475,7 +504,7 @@ while True:
     # ---What happens when you click Skip
     if event == "-skip-":
         answer = sg.popup_yes_no(
-            'Skip this process?', no_titlebar=True, background_color=infoc, font=('Helvetica', 11), text_color='black')
+            'Skip this process?', no_titlebar=True, background_color=infoc, font=Font, text_color='black')
 
         if answer == 'No':
             print('No')
@@ -497,15 +526,15 @@ while True:
         window['undoComp'].update(disabled=True)
         window['undoNorm'].update(disabled=True)
         window['undoNR'].update(disabled=True)
-        window['undoMNR'].update(disabled=True)
         window['undoEQ'].update(disabled=True)
         window['undoSS'].update(disabled=True)
         window['play3'].update(disabled=True)
         window['-LOInfo'].update(visible=True)
         window['-next-'].update(disabled=True)
         window['ExportBar'].update(visible=False)
+        window['PlayVol'].update(0)
 
-        window['info'].update("Click on one of the 🛈's to see more information.")
+        window['info'].update("Click on one of the ⓘ's to see more information.")
 
         # --- Events for Processes page
         # --- Checks to see if a box is ticked, and adds it to the list of pages if so
@@ -524,26 +553,19 @@ while True:
             else:
                 Comp = False
 
-            # --- Normalisation
-            if values['-Norm-'] == True:
-                Norm = True
-                Pages.append('-LONorm')
-            else:
-                Norm = False
-
-            # --- Mouth Noise Reduction
-            if values['-MNR-'] == True:
-                MNR = True
-                Pages.append('-LOMNR')
-            else:
-                MNR = False
-
             # --- Vocal EQ
             if values['-EQ-'] == True:
                 EQ = True
                 Pages.append('-LOEQ')
             else:
                 EQ = False
+
+            # --- Normalisation
+            if values['-Norm-'] == True:
+                Norm = True
+                Pages.append('-LONorm')
+            else:
+                Norm = False
 
             # --- Silence Skipping
             if values['-SSkip-'] == True:
@@ -585,6 +607,14 @@ while True:
         if Pages[Page] == "-LOExport":
             window['-next-'].update(visible=False)
 
+        # --- Disables the volume control for the normalisation page so it doesn't interfere with results
+        if Pages[Page] == "-LONorm":
+            window['infoPlayVol'].update(visible=False)
+            window['PlayVol'].update(visible=False)
+        else:
+            window['infoPlayVol'].update(visible=True)
+            window['PlayVol'].update(visible=True)
+
         window.refresh()
 
     # --- What happens when you click apply
@@ -599,7 +629,6 @@ while True:
         window['undoComp'].update(disabled=True)
         window['undoNorm'].update(disabled=True)
         window['undoNR'].update(disabled=True)
-        window['undoMNR'].update(disabled=True)
         window['undoEQ'].update(disabled=True)
         window['undoSS'].update(disabled=True)
         window.refresh()
@@ -732,24 +761,6 @@ while True:
                 window['NBar'].update('Compression Completed')
                 window.refresh()
 
-            # --Normalisation
-            if '-LONorm' in Pages and Pages[Page] in ['-LONorm', '-LOExport']:
-                print(values['VNorm'])
-
-                # ---Reading input values
-                normvalue = float(values['VNorm'])
-                normvalue = (normvalue * -1)
-
-                print("Normalising...")
-                # print(normvalue)
-                window['NBar'].update('Normalising...')
-                window.refresh()
-
-                # ---Applying normalisation
-                ABook = effects.normalize(ABook, headroom=normvalue)
-                window['NBar'].update('Normalisation Completed')
-                window.refresh()
-
             # --Equaliser
             if '-LOEQ' in Pages and Pages[Page] in ['-LOEQ', '-LOExport']:
                 print("Equalizing...")
@@ -834,6 +845,24 @@ while True:
                 window['NBar'].update('Equalization Complete')
                 window.refresh()
 
+            # --Normalisation
+            if '-LONorm' in Pages and Pages[Page] in ['-LONorm', '-LOExport']:
+                print(values['VNorm'])
+
+                # ---Reading input values
+                normvalue = float(values['VNorm'])
+                normvalue = (normvalue * -1)
+
+                print("Normalising...")
+                # print(normvalue)
+                window['NBar'].update('Normalising...')
+                window.refresh()
+
+                # ---Applying normalisation
+                ABook = effects.normalize(ABook, headroom=normvalue)
+                window['NBar'].update('Normalisation Completed')
+                window.refresh()
+
             # --Silence Skipper
             if '-LOSSkip' in Pages and Pages[Page] in ['-LOSSkip', '-LOExport']:
 
@@ -848,7 +877,8 @@ while True:
                 window.refresh()
 
                 # ---Split file into non-silent sections
-                Short = silence.split_on_silence(ABook, min_silence_len=SSMin, silence_thresh=SSThresh, seek_step=SSStep,
+                Short = silence.split_on_silence(ABook, min_silence_len=SSMin, silence_thresh=SSThresh,
+                                                 seek_step=SSStep,
                                                  keep_silence=SSKeep)
                 print("Segments Split")
 
@@ -861,6 +891,8 @@ while True:
                 if partnu == 0:
                     print("No Silence Detected")
                     window['NBar'].update('No Silence Detected')
+                    window['info'].update('No periods of silence detected. Normally this can be fixed by lowering the'
+                                          ' Silence Threshold value.')
                     window.refresh()
                 else:
                     # ---Create Blank Segment
@@ -943,7 +975,6 @@ while True:
         window['undoComp'].update(disabled=False)
         window['undoNorm'].update(disabled=False)
         window['undoNR'].update(disabled=False)
-        window['undoMNR'].update(disabled=False)
         window['undoEQ'].update(disabled=False)
         window['undoSS'].update(disabled=False)
         window.refresh()
@@ -962,7 +993,7 @@ while True:
         Pages = ['-LOHome', '-LOProcess']
         window.refresh()
 
-# ---Events for Background Noise Combo Box (Reading Presets)
+    # ---Events for Background Noise Combo Box (Reading Presets)
     if event == 'NRCombo':
         print(values['NRCombo'])
         NRPSNum = NRPSNames.index(values['NRCombo'])
@@ -973,8 +1004,7 @@ while True:
 
         window['VNR'].update(NRSetting)
 
-
-# ---Events for Compression Combo Box (Reading Presets)
+    # ---Events for Compression Combo Box (Reading Presets)
     if event == 'CompCombo':
         print(values['CompCombo'])
         CompPSNum = CompPSNames.index(values['CompCombo'])
@@ -990,22 +1020,7 @@ while True:
         window['CompAttack'].update(CompSetting[2])
         window['CompRelease'].update(CompSetting[3])
 
-
-# ---Events for Normalisation Combo Box (Reading Presets)
-    if event == 'NormCombo':
-        print(values['NormCombo'])
-        NormPSNum = NormPSNames.index(values['NormCombo'])
-        print(NormPSNum)
-
-        print(NormPSValues[NormPSNum])
-        NormSetting = NormPSValues[NormPSNum]
-
-        print('Norm Setting :', NormSetting)
-
-        window['VNorm'].update(NormSetting)
-
-
-# ---Events for Vocal EQ Combo Box (Reading Presets)
+    # ---Events for Vocal EQ Combo Box (Reading Presets)
     if event == 'EQCombo':
         print(values['EQCombo'])
         EQPSNum = EQPSNames.index(values['EQCombo'])
@@ -1027,7 +1042,20 @@ while True:
         window['eq8k'].update(EQSetting[8])
         window['eq16k'].update(EQSetting[9])
 
-# ---Events for Silence Skipping Combo Box (Reading Presets)
+    # ---Events for Normalisation Combo Box (Reading Presets)
+    if event == 'NormCombo':
+        print(values['NormCombo'])
+        NormPSNum = NormPSNames.index(values['NormCombo'])
+        print(NormPSNum)
+
+        print(NormPSValues[NormPSNum])
+        NormSetting = NormPSValues[NormPSNum]
+
+        print('Norm Setting :', NormSetting)
+
+        window['VNorm'].update(NormSetting)
+
+    # ---Events for Silence Skipping Combo Box (Reading Presets)
     if event == 'SSkipCombo':
         print(values['SSkipCombo'])
         SSkipPSNum = SSkipPSNames.index(values['SSkipCombo'])
@@ -1043,8 +1071,24 @@ while True:
         window['SSKeep'].update(SSkipSetting[2])
         window['SSStep'].update(SSkipSetting[3])
 
+    # ---The Info Buttons
+    # ---Info Buttons for Player
+    if event == 'infoPlayOriginal':
+        window['info'].update("This button will play the audiobook as it was when you clicked 'Next' on the"
+                              " last page.\n\n"
+                              "Consider this the 'Before' of the before and after\ntest")
 
-# ---The Info Buttons
+    if event == 'infoPlayModified':
+        window['info'].update("This button will play your audiobook with the effects from this page applied."
+                              " These changes aren't locked in until you click 'Next'.\n\n"
+                              "Consider this the 'After' of the before and after test")
+
+    if event == 'infoPlayVol':
+        window['info'].update("This volume slider only effects the Modified audio. That way you can match the"
+                              " audio of the original and modified to get a good comparison.\n\n"
+                              "Note that the effects of this volume slider aren't permanent. To permanently change"
+                              "the volume of your audiobook, use the 'Normalisation' tool.")
+
     # ---Info Buttons for Presets Page
     if event == 'infoPrNR':
         window['info'].update('The Background Noise Reducer gets rid of any hiss, buzz,'
@@ -1082,6 +1126,13 @@ while True:
                               'The compressor can be a bit confusing, so I’d recommend sticking to the presets'
                               ' unless you know what you’re doing.')
 
+    if event == 'infoCompCombo':
+        window['info'].update("Some of the names for the presets might be confusing.\n\n"
+                              "Highly Dynamic: Means that the volume that"
+                              " the narrator is speaking at changes A LOT.\n\n"
+                              "Rough Transients: Means that the very first part of a word or sentence is often"
+                              "much louder than the rest of the word.")
+
     if event == 'infoCompThresh':
         window['info'].update('The Threshold is the volume that audio has to go over'
                               ' to be effected by the compressor.\n\n'
@@ -1108,18 +1159,18 @@ while True:
                               'Having this number too low can make parts of the audiobook quieter that you would'
                               ' like, but too high can sound unnatural.')
 
-    # ---Info Buttons for Normalisation Page
-    if event == 'infoNorm':
-        window['info'].update('The Normaliser adjusts the overall volume of the track.\n\n'
-                              'I recommend leaving this'
-                              ' one at zero, but feel free to play around and see what works for you.')
-
     # ---Info Buttons for Equaliser Page
     if event == 'infoEQ':
         window['info'].update('The Equaliser adjusts the volume of different frequencies/pitches of audio. '
                               'The higher numbers represent the higher frequencies and vice versa.\n\n'
                               'This is useful for if your audiobook sounds too bassy, too high pitched, or anywhere '
                               'in between.')
+
+    # ---Info Buttons for Normalisation Page
+    if event == 'infoNorm':
+        window['info'].update('The Normaliser adjusts the overall volume of the track.\n\n'
+                              'I recommend leaving this'
+                              ' one at zero, but feel free to play around and see what works for you.')
 
     # ---Info Buttons for Silence Skip Page
     if event == 'infoSSkip':

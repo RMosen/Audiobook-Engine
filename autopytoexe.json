@@ -18,6 +18,10 @@
    "value": false
   },
   {
+   "optionDest": "icon_file",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/files/ABEIcon.ico"
+  },
+  {
    "optionDest": "ascii",
    "value": false
   },
@@ -59,11 +63,35 @@
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/sklearn;sklearn/"
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/files;files/"
   },
   {
    "optionDest": "datas",
    "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/librosa;librosa/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/pydub;pydub/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/simpleaudio;simpleaudio/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/sklearn;sklearn/"
+  },
+  {
+   "optionDest": "binaries",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/ffmpeg.exe;."
+  },
+  {
+   "optionDest": "binaries",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/ffplay.exe;."
+  },
+  {
+   "optionDest": "binaries",
+   "value": "C:/Users/Richard/Documents/GitHub/Audiobooks/add to main/ffprobe.exe;."
   }
  ],
  "nonPyinstallerOptions": {
